@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import styles from "./Navigation.module.css";
-import logo from "../../assets/images/sfMedia.svg";
+import logo from "../../assets/images/atok.svg";
 import "gsap/ScrollTrigger";
 import { gsap } from "gsap";
 

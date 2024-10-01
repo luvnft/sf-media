@@ -117,40 +117,38 @@ const Solutions = () => {
       />
       <div className={styles.solutionsIntro}>
         <p className={styles.decoWord} ref={decoWordRef}>
-          Social
+          SHORTS
         </p>
         <h2>
-          Digitale{" "}
+          24 Hour{" "}
           <span className="color" ref={colorSpanRef}>
-            Effizienz{" "}
+            Turnaround{" "}
           </span>
           <br />
-          gleich um die Ecke
+          Time
         </h2>
         <div className="spacer"></div>
         <p ref={descriptionIntroRef}>
-          Unsere Marketing Agentur besteht aus Enthusiasten der Social
-          <br /> Media Branche, die unseren Kunden helfen, ihre Effektivität im
-          <br />
-          Online-Marketing zu steigern
+          We streamlined the process of hiring a third-party marketing agency
+          with a simple four-step process that even a non-tech-savvy person can follow.
         </p>
       </div>
       <div className={styles.solutionsList} ref={solutionsListRef}>
         <SolutionItem
-          title="Strategieplanung"
-          description="Wir helfen Ihnen bei der Entwicklung einer umfassenden Social Media Marketingstrategie, mit der Sie Ihre Geschäftsziele erreichen können."
+          title="🎯 Goals"
+          description="Tell us your end goal and we take it from there."
         />
         <SolutionItem
-          title="Innovation"
-          description="Kontinuierliche Marktforschung und Einführung neuer Lösungen, die einen Wettbewerbsvorteil im Bereich Social Media Marketing verschaffen."
+          title="🔴 Record"
+          description="Send us your edited or raw videos."
         />
         <SolutionItem
-          title="Beratung"
-          description="Wir beraten Sie bei der Auswahl der für Ihre Marke und Ihre Zielgruppe am besten geeigneten Social Media Plattformen."
+          title="🎬 Cut"
+          description="We trim the recorded video down as short as possible and add a touch of Gen-Z sauce on it."
         />
         <SolutionItem
-          title="Werbung"
-          description="Wir erstellen attraktive Inhalte, führen Werbekampagnen durch und sorgen dafür, dass Ihre Marke im Web sichtbar ist."
+          title="👨🏼‍🍳 Cook"
+          description="Walla, your video is ready within 24 hours to be served to the masses. Arvrtise Discord users have priority."
         />
       </div>
     </div>

@@ -15,10 +15,10 @@ function ContactForm() {
 
   const [formData, setFormData] = useState({
     name: "",
-    vorname: "",
+    firstname: "",
     email: "",
-    telefonnummer: "",
-    nachricht: "",
+    phonenumber: "",
+    message: "",
   });
 
   const handleInputChange = (event) => {
@@ -57,10 +57,10 @@ function ContactForm() {
         formRef.current.reset();
         setFormData({
           name: "",
-          vorname: "",
+          firstname: "",
           email: "",
-          telefonnummer: "",
-          nachricht: "",
+          phonenumber: "",
+          message: "",
         });
       } else {
         setIsFormError(true);
@@ -95,10 +95,10 @@ function ContactForm() {
         <div className={styles.form_field}>
           <input
             type="text"
-            id="vorname"
-            value={formData.vorname}
+            id="firstname"
+            value={formData.firstname}
             onChange={handleInputChange}
-            placeholder="Vorname"
+            placeholder="firstname"
             className={styles.form_input}
             required
           />
@@ -117,10 +117,10 @@ function ContactForm() {
         <div className={styles.form_field}>
           <input
             type="tel"
-            id="telefonnummer"
-            value={formData.telefonnummer}
+            id="phonenumber"
+            value={formData.phonenumber}
             onChange={handleInputChange}
-            placeholder="Telefonnummer"
+            placeholder="Phone"
             className={styles.form_input}
             required
           />

@@ -2,15 +2,15 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "./HeroCollection.module.css";
-import picture_1 from "../../../assets/images/heroCollection/1.webp";
-import picture_2 from "../../../assets/images/heroCollection/2.webp";
-import picture_3 from "../../../assets/images/heroCollection/3.webp";
-import picture_4 from "../../../assets/images/heroCollection/4.webp";
-import picture_5 from "../../../assets/images/heroCollection/5.webp";
-import picture_6 from "../../../assets/images/heroCollection/6.webp";
-import picture_7 from "../../../assets/images/heroCollection/7.webp";
-import picture_8 from "../../../assets/images/heroCollection/8.webp";
-import picture_9 from "../../../assets/images/heroCollection/9.webp";
+import picture_1 from "../../../assets/images/heroCollection/1.jpg";
+import picture_2 from "../../../assets/images/heroCollection/2.jpg";
+import picture_3 from "../../../assets/images/heroCollection/3.jpg";
+import picture_4 from "../../../assets/images/heroCollection/4.jpg";
+import picture_5 from "../../../assets/images/heroCollection/5.jpg";
+import picture_6 from "../../../assets/images/heroCollection/6.jpg";
+import picture_7 from "../../../assets/images/heroCollection/7.jpg";
+import picture_8 from "../../../assets/images/heroCollection/8.jpg";
+import picture_9 from "../../../assets/images/heroCollection/9.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 

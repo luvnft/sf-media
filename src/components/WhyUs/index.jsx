@@ -89,52 +89,46 @@ const WhyUs = () => {
         />
         <div className={styles.whyUsIntro}>
           <p className={styles.decoWord} ref={decoWordRef}>
-            Media
+            EFFECTS
           </p>
           <h2>
-            Konvertieren Sie Ihre <br />
+            Create an <br />
             <span className="color" ref={colorSpanRef}>
-              Followers
-            </span>
-            in Leads
+            Affordable</span> Branded Effect
           </h2>
           <div className="spacer"></div>
           <p className={styles.descriptionIntro}>
-            Wir setzen unser Know-how und unsere Erfahrung ein, um durch
-            kreative und ansprechende
-            <br />
-            Inhalte Kunden für Ihr Unternehmen zu gewinnen. Mit sorgfältig
-            gestalteten und optimierten
-            <br />
-            Werbekampagnen konvertieren wir diese dann in potenzielle Kunden.
+             💡 Create a challenge to boost a service or product.<br />
+             💡 Create a branded game customers can play while waiting for your service.<br />
+             💡 Pay an TikTok influencer to promote your branded AR Effect<br />
+            Arvrtise is the top 5% AR Effect creators in the world.<br />
+            Studies show creative and immersive content, like AR effects, resonates well with
+            younger audiences (Gen Z and Millennials) who are the primary users of TikTok​.
           </p>
         </div>
         <div className={styles.advantagesList} ref={advantagesListRef}>
           <h4>
-            Wenn Sie mit uns zusammenarbeiten, können Sie sicher sein, dass:
+            The TikTok AR creation process:
           </h4>
           <div className={styles.advantageItem}>
             <div className={styles.advantageIcon}>
               <img src={tick} alt="tick icon" />
             </div>
             <p>
-              Ihre Präsenz in den sozialen Medien ästhetisch ansprechend
-              gestaltet wird
-            </p>
+              1️⃣ Show or tell us the effect that you want us to create for you.</p>
           </div>
           <div className={styles.advantageItem}>
             <div className={styles.advantageIcon}>
               <img src={tick} alt="tick icon" />
             </div>
-            <p>sich von der Konkurrenz abhebt</p>
+            <p>2️⃣ We tell you the cost and turnaround time via email or in a private Arvrtise Discord channel.</p>
           </div>
           <div className={styles.advantageItem}>
             <div className={styles.advantageIcon}>
               <img src={tick} alt="tick icon" />
             </div>
             <p>
-              Garantieren wir einen professionellen und personalisierten
-              Kundenservice
+               3️⃣ Review the effect before we publish it to the world. The effect will go live 12 to 24 hours after we publish it.
             </p>
           </div>
           <div className={styles.advantageItem}>
@@ -142,8 +136,7 @@ const WhyUs = () => {
               <img src={tick} alt="tick icon" />
             </div>
             <p>
-              Marketingziele auf die effektivste und effizienteste Weise zu
-              erreichen.
+              4️⃣ We will send you the link and QR code once it's live. Anyone can search for the effect name, and we will provide you with analytics every 30 days.
             </p>
           </div>
         </div>

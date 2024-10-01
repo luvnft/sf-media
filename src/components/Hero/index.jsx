@@ -41,13 +41,12 @@ const Home = () => {
     <div ref={homeRef} className={styles.home} id="startseite">
       <div className={styles.intro}>
         <h1 className={styles.title}>
-          Social Media
-          <br /> Marketing Agentur
+          Short Viral
+          <br /> TikTok Creators
         </h1>
         <p className={styles.description}>
-          Wir helfen Ihnen, die richtige Zielgruppe zu identifizieren und
-          gezielte <br />
-          Werbekampagnen zu erstellen, um Ihre Marketingziele zu erreichen.
+          🎬 Cut raw video footage into cool 60-second reels.<br />
+          🎮 Branded AR effects 📣 Ad campaigns 🔥 Branded CapCut Memes
         </p>
       </div>
       <div className={styles.hero}>

@@ -6,12 +6,12 @@ import crosshair from "../../assets/images/decorations/crosshair.svg";
 import circles from "../../assets/images/decorations/circles.svg";
 import circleDashed from "../../assets/images/decorations/circleDashed.svg";
 import ServicesItem from "./ServicesList/index";
-import werbungen from "../../assets/images/servicesIcons/werbungen.png";
-import betreuung from "../../assets/images/servicesIcons/betreuung.png";
-import seo_google from "../../assets/images/servicesIcons/seo-google.png";
-import email_marketing from "../../assets/images/servicesIcons/email-marketing.png";
-import copywriting from "../../assets/images/servicesIcons/copywriting.png";
-import landingpages from "../../assets/images/servicesIcons/landingpages.png";
+import realEstate from "../../assets/images/servicesIcons/real_estate_tiktok.png";
+import travel from "../../assets/images/servicesIcons/travel_tiktok.png";
+import car from "../../assets/images/servicesIcons/car_tiktok.png";
+import crypto from "../../assets/images/servicesIcons/ai_crypto_tiktok.png";
+import food from "../../assets/images/servicesIcons/food_tiktok.png";
+import beauty from "../../assets/images/servicesIcons/beauty_tiktok.png";
 import useScrollRotateAnimation from "../../hooks/useScrollRotateAnimation";
 import useIsMobile from "../../hooks/useIsMobile";
 
@@ -95,21 +95,22 @@ function Services() {
             alt="dashed circle decoration"
           />
           <p className={styles.decoWord} ref={decoWordRef}>
-            Agentur
+            Studio
           </p>
           <h2>
-            Unsere
+            TikTok
             <br />
             <span className="color" ref={colorSpanRef}>
-              Dienstleistungen
+            Industries
             </span>
           </h2>
           <div className="spacer"></div>
           <p>
-            Erstellung einzigartiger und ansprechender Inhalte,
-            <br /> die sich von der Konkurrenz abheben und Kunden
-            <br />
-            anziehen werden.
+            47% of TikTokers use products or services they discovered<br />
+            on TikTok – all thanks to the relatability and talent of<br />
+            the platform’s many content creators. By leveraging the<br />
+            Creator Marketplace, we align your brand with the best content<br />
+            or hyper-local content creators to boost your brand.
           </p>
         </div>
         <div className={styles.servicesList} ref={servicesListRef}>
@@ -119,40 +120,36 @@ function Services() {
             alt="simple circles decoration"
           />
           <ServicesItem
-            icon={<img src={werbungen} alt="werbungen icon" />}
-            title="Werbungen"
-            description="Erstellen von Werbeanzeigen und Kampagnen auf den sozialen Medien (Facebook, Instagram, TikTok) zur Lead-Generierung und Kundenakquise. Zielgruppenanalyse und -ansprache, um effektive Werbekampagnen auf den entsprechenden Kanälen zu schalten."
+            icon={<img src={realEstate} alt="Real Estate icon" />}
+            title="Real Estate"
+            description="Create real estate content that Gen-Z won't fall asleep watching."
           />
           <ServicesItem
-            icon={<img src={betreuung} alt="betreuung icon" />}
-            title="Betreuung"
-            description="Ästhetisches Gestalten und Organisieren von Postings und Kampagnen auf den sozialen Medien, um die Sichtbarkeit und Wahrnehmung des Kunden auf den Kanälen zu erhöhen.
-            Regelmäßige Aktualisierung und Überwachung der sozialen Medien, um eine erfolgreiche Kommunikation mit der Zielgruppe zu gewährleisten."
+            icon={<img src={travel} alt="travel icon" />}
+            title="Travel"
+            description="Arvrtise partnered with What3Words to create content mapped to a specific 3m x 3m square 3-word address anywhere in the world you can travel to."
           />
           <ServicesItem
-            icon={<img src={seo_google} alt="seo google icon" />}
-            title="SEO Google Pflege"
-            description="Analyse und Pflege der Webseite in Bezug auf Suchmaschinenoptimierung (SEO), um eine bessere Sichtbarkeit der Webseite bei Google-Suchen zu erreichen. Keyword-Analyse und -Recherche zur gezielten Optimierung der Webseite."
+            icon={<img src={car} alt="car icon" />}
+            title="Cars"
+            description="Arvrtise partnered with What3Words to map cars to a specific 3m x 3m square 3-word address on a car lot or on street."
           />
           <ServicesItem
-            icon={<img src={email_marketing} alt="email marketing icon" />}
-            title="Email Marketing"
-            description="Erstellung und Versand von Newslettern und Angeboten per E-Mail, um die Kundenbindung zu stärken und den Kundenstamm zu erweitern.
-            Verwaltung und Pflege von E-Mail-Listen, um eine zielgerichtete Kommunikation mit der Zielgruppe zu ermöglichen."
+            icon={<img src={crypto} alt="crypto icon" />}
+            title="Crypto & AI"
+            description="Marketing crypto or AI to the masses isn't easy, we create cool and short explainer trending videos the masses can relate to."
           />
           <ServicesItem
-            icon={<img src={copywriting} alt="copywriting icon" />}
-            title="Copywriting"
-            description="Erstellung von Texten für die sozialen Medien und die Webseite, um eine ansprechende und klare Kommunikation mit der Zielgruppe zu erreichen.
-            Optimierung von Texten in Bezug auf Suchmaschinenoptimierung und Anpassung an die Zielgruppe."
+            icon={<img src={food} alt="food icon" />}
+            title="Food"
+            description="Foodies can scale a small restaurant to a multi-state, medium-sized brand overnight. Let us make that your new reality."
           />
           <ServicesItem
             icon={
-              <img src={landingpages} alt="landingpages & sales funnel icon" />
+              <img src={beauty} alt="beauty icon" />
             }
-            title="Landingpages & Sales Funnel"
-            description="Erstellung von Landingpages und Salesfunnel, um die Kundenakquise und -bindung zu erhöhen.
-            Optimierung und Überwachung der Landingpages und Salesfunnel zur Erhöhung der Conversion-Rate und des Verkaufserfolgs."
+            title="Beauty"
+            description="Create branded hair, beauty or game AR effects that your clients can engage with and share while sitting in your chair. "
           />
         </div>
       </div>

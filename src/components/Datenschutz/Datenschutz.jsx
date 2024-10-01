@@ -36,7 +36,7 @@ function Datenschutz() {
       <p>
         Bei Ihrer Kontaktaufnahme mit uns per E-Mail oder über ein
         Kontaktformular werden die von Ihnen mitgeteilten Daten (Ihre
-        E-Mail-Adresse, ggf. Ihr Name und Ihre Telefonnummer) von uns
+        E-Mail-Adresse, ggf. Ihr Name und Ihre Phone) von uns
         gespeichert, um Ihre Fragen zu beantworten. Die in diesem Zusammenhang
         anfallenden Daten löschen wir, nachdem die Speicherung nicht mehr
         erforderlich ist, sofern keine gesetzlichen Aufbewahrungspflichten
@@ -104,7 +104,7 @@ function Datenschutz() {
         nach Art. 6 Abs. 1 S. 1 lit. a DSGVO auf Grundlage Ihrer freiwillig
         erteilten Einwilligung. Die für die Benutzung des Kontaktformulars von
         uns erhobenen personenbezogenen Daten wie Vorname, Name, IP-Adresse,
-        E-Mail-Adresse, Telefonnummer und Ihre Nachricht werden nach Erledigung
+        E-Mail-Adresse, Phone und Ihre Nachricht werden nach Erledigung
         der von Ihnen gestellten Anfrage gelöscht, sofern dem keine gesetzlichen
         Aufbewahrungsfristen entgegenstehen.
       </p>

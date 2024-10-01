@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Contact.module.css";
-import fb_icon from "../../assets/images/contactIcons/fb.svg";
 import instagram_icon from "../../assets/images/contactIcons/instagram.svg";
-import logo from "../../assets/images/sfMedia.svg";
+import tiktok_icon from "../../assets/images/contactIcons/tiktok.svg"; // Update to the correct TikTok icon path
+import logo from "../../assets/images/atok.svg";
 import ContactForm from "./ContactForm/index";
 
 function Contact() {
@@ -11,17 +11,17 @@ function Contact() {
       <div className={styles.container}>
         <div className={styles.company_info}>
           <div className={styles.logo}>
-            <img src={logo} alt="SFMedia Logo" />
+            <img src={logo} alt="atok Logo" />
           </div>
           <div className={styles.contact_info}>
             <div className={styles.social_media}>
               <div className={styles.social_icon}>
                 <a
-                  href="https://www.facebook.com/profile.php?id=100087052610283"
+                  href="https://www.tiktok.com/@arvrtise" // Update this with your TikTok link
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={fb_icon} alt="fb icon" />
+                  <img src={tiktok_icon} alt="tiktok icon" />
                 </a>
               </div>
               <div className={styles.social_icon}>
@@ -39,7 +39,7 @@ function Contact() {
         </div>
         <div className={styles.contact_form}>
           <h2 className={styles.form_title}>
-            Schreiben Sie uns <br /> um mehr zu <span>erfahren</span>
+              Contact us <br /> to <span>learn more</span>
           </h2>
           <ContactForm />
         </div>

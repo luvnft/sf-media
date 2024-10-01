@@ -39,7 +39,7 @@ const ServicesItem = ({ icon, title, description }) => {
         <p>{description}</p>
       </div>
       <button onClick={toggleShowMore} className={styles.btnShowMore}>
-        {showMore ? "Weniger anzeigen ▲" : "Weiterlesen ▼"}
+        {showMore ? "Show Less ▲" : "Read More ▼"}
       </button>
     </div>
   );

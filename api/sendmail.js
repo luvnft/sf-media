@@ -14,73 +14,72 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-const createMailOptions = (name, vorname, email, telefonnummer, nachricht) => ({
+// Function to create mail options for incoming messages
+const createMailOptions = (name, firstname, email, phonenumber, message) => ({
   from: `${name} <${email}>`,
   to: process.env.VITE_REACT_APP_RECEIVING_EMAIL,
-  subject: "Neue Textnachricht für SF Media",
+  subject: "New Text Message for SF Media",
   html: `
         <div style="font-family: Arial, sans-serif; color: #333; max-width: 600px; margin: auto;">
             <div style="background-color: #f8f9fa; padding: 20px; text-align: center; border-bottom: 1px solid #e9ecef;">
-                <h2 style="margin-bottom: 0;">Neue Nachricht von ${name} ${vorname}</h2>
+                <h2 style="margin-bottom: 0;">New Message from ${name} ${firstname}</h2>
             </div>
             <div style="background-color: #fff; padding: 20px; color: #495057;">
-                <h3 style="border-bottom: 1px solid #e9ecef; padding-bottom: 10px;">Kontaktinformation:</h3>
+                <h3 style="border-bottom: 1px solid #e9ecef; padding-bottom: 10px;">Contact Information:</h3>
                 <ul>
                     <li><b>Email:</b> ${email}</li>
-                    <li><b>Telefonnummer:</b> ${telefonnummer}</li>
+                    <li><b>Phone Number:</b> ${phonenumber}</li>
                 </ul>
-                <h3 style="border-bottom: 1px solid #e9ecef; padding-bottom: 10px; margin-top: 20px;">Nachricht:</h3>
-                <p>${nachricht}</p>
+                <h3 style="border-bottom: 1px solid #e9ecef; padding-bottom: 10px; margin-top: 20px;">Message:</h3>
+                <p>${message}</p>
             </div>
         </div>
     `,
 });
 
-const createReplyOptions = (name, vorname, email, nachricht) => ({
-  from: `SF Media | Ihre Social Media Agentur <${process.env.VITE_REACT_APP_RECEIVING_EMAIL}>`,
+// Function to create reply options for sending confirmation emails
+const createReplyOptions = (name, firstname, email, message) => ({
+  from: `Arvrtise Tok | Your Social Media Agency <${process.env.VITE_REACT_APP_RECEIVING_EMAIL}>`,
   to: `${email}`,
-  subject: "Vielen Dank für Ihr Interesse",
+  subject: "Thank You for Your Interest",
   html: `
         <div style="font-family: Arial, sans-serif; color: #333; max-width: 600px; margin: auto;">
             <div style="background-color: #f8f9fa; padding: 20px; text-align: center; border-bottom: 1px solid #e9ecef;">
-                <h2 style="margin-bottom: 0;">Hallo ${name} ${vorname},</h2>
+                <h2 style="margin-bottom: 0;">Hello ${name} ${firstname},</h2>
             </div>
             <div style="background-color: #fff; padding: 20px; color: #495057;">
-                <p>Danke, dass Sie uns kontaktiert haben. Wir haben Ihre Nachricht erhalten und werden so schnell wie möglich darauf antworten.</p>
-                <p>Die Nachricht, die Sie uns gesendet haben:</p>
-                <p>"<em>${nachricht}</em>"</p>
-                <p>Auf Wiederhören,</p>
-                <p>dein Team, SF Media</p>
+                <p>Thank you for contacting us. We have received your message and will respond as soon as possible.</p>
+                <p>The message you sent us:</p>
+                <p>"<em>${message}</em>"</p>
+                <p>Best regards,</p>
+                <p>Your team, SF Media</p>
             </div>
         </div>
     `,
 });
 
+// Main function to handle incoming requests
 export default async (req, res) => {
-  const { name, vorname, email, telefonnummer, nachricht, recaptchaToken } =
-    req.body;
+  const { name, firstname, email, phonenumber, message, recaptchaToken } = req.body;
 
   const verificationURL = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.VITE_REACT_APP_SECRET_KEY}&response=${recaptchaToken}`;
+  
   try {
     const response = await axios.post(verificationURL);
     if (!response.data.success) {
       return res.status(400).send({ error: "reCAPTCHA verification failed." });
     }
   } catch (error) {
-    console.error(error);
+    console.error("Error verifying reCAPTCHA:", error.message);
     return res.status(500).send({ error: "Error verifying reCAPTCHA." });
   }
 
   try {
-    await transporter.sendMail(
-      createMailOptions(name, vorname, email, telefonnummer, nachricht)
-    );
-    await transporter.sendMail(
-      createReplyOptions(name, vorname, email, nachricht)
-    );
+    await transporter.sendMail(createMailOptions(name, firstname, email, phonenumber, message));
+    await transporter.sendMail(createReplyOptions(name, firstname, email, message));
     res.status(200).send({ message: "Message sent successfully." });
   } catch (error) {
-    console.error(error);
+    console.error("Error while sending the message:", error.message);
     res.status(500).send({ error: "Error while sending the message." });
   }
 };
