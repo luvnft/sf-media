@@ -21,8 +21,8 @@ function Footer() {
         <div className={styles.rights}>
           <p className={styles.footerText}>©2023 all rights reserved</p>
           <p className={styles.madeBy}>
-            <a href="https://tanakaev.com" target="_blank" rel="noreferrer">
-              powered by <span className={styles.weight}>tanakaev</span>
+            <a href="https://arvrtise.com" target="_blank" rel="noreferrer">
+              powered by <span className={styles.weight}>Arvrtise</span>
               <span className={styles.color}>.</span>
             </a>
           </p>
