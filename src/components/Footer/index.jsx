@@ -28,18 +28,15 @@ function Footer() {
           </p>
         </div>
         <ul className={styles.footerList}>
-          <li
-            className={styles.footerLink}
-            onClick={() => handleModalOpen("Impressum")}
-          >
-            <p>Impressum</p>
-          </li>
-          <li
-            className={styles.footerLink}
-            onClick={() => handleModalOpen("Datenschutz")}
-          >
-            <p>Datenschutzbestimmungen</p>
-          </li>
+        <li className={styles.footerLink}>
+        <a 
+            href="https://discord.gg/tCxuCX2X2Y" 
+            target="_blank" 
+            rel="noopener noreferrer"
+        >
+            Arvrtise Discord
+        </a>
+        </li>
           <li
             className={styles.footerLink}
             onClick={() => handleModalOpen("AGB")}

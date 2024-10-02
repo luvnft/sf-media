@@ -131,6 +131,7 @@ const Solutions = () => {
         <p ref={descriptionIntroRef}>
           We streamlined the process of hiring a third-party marketing agency
           with a simple four-step process that even a non-tech-savvy person can follow.
+          Join our Arvrtise  <a href="https://discord.gg/tCxuCX2X2Y">Discord</a> to get started.
         </p>
       </div>
       <div className={styles.solutionsList} ref={solutionsListRef}>

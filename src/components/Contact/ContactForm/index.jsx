@@ -43,7 +43,7 @@ function ContactForm() {
     }
 
     try {
-      const response = await fetch("https://www.media-sf.de/api/sendmail", {
+      const response = await fetch("https://tok.arvrtise.com/api/sendmail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -87,7 +87,7 @@ function ContactForm() {
             id="name"
             value={formData.name}
             onChange={handleInputChange}
-            placeholder="Name"
+            placeholder="Business Name"
             className={styles.form_input}
             required
           />
@@ -98,7 +98,7 @@ function ContactForm() {
             id="firstname"
             value={formData.firstname}
             onChange={handleInputChange}
-            placeholder="firstname"
+            placeholder="First Name"
             className={styles.form_input}
             required
           />
@@ -129,11 +129,11 @@ function ContactForm() {
       <div className={styles.form_field}>
         <textarea
           type="text"
-          id="nachricht"
-          value={formData.nachricht}
+          id="message"
+          value={formData.message}
           onChange={handleInputChange}
           rows="4"
-          placeholder="Nachricht"
+          placeholder="message"
           className={styles.form_input}
           required
         ></textarea>
@@ -141,12 +141,12 @@ function ContactForm() {
       {isSubmitting && <div className={styles.form_submitting}>Senden...</div>}
       {isFormSubmitted && !isFormError && (
         <div className={styles.form_success}>
-          Vielen Dank für das Absenden des Formulars!
+          Thank you very much for submitting the form!
         </div>
       )}
       {isFormError && (
         <div className={styles.form_error}>
-          Etwas stimmt nicht. Bitte versuchen Sie es später erneut.
+          Something went wrong. Please try again later.
         </div>
       )}
       {showRecaptcha && (
@@ -156,7 +156,7 @@ function ContactForm() {
       )}
       <div className={styles.btn_send}>
         <button type="submit" value="Submit" disabled={isSubmitting}>
-          Senden
+          Send
         </button>
       </div>
     </form>

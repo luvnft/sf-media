@@ -2,12 +2,7 @@ import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "./SocialNetworks.module.css";
-import google from "../../assets/images/socialBelt/google.svg";
-import instagram from "../../assets/images/socialBelt/instagram.svg";
-import meta from "../../assets/images/socialBelt/meta.svg";
 import tiktok from "../../assets/images/socialBelt/tiktok.svg";
-import twitter from "../../assets/images/socialBelt/twitter.svg";
-import youtube from "../../assets/images/socialBelt/youtube.svg";
 import useIsMobile from "../../hooks/useIsMobile";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -47,24 +42,11 @@ const SocialNetworks = () => {
 
   return (
     <div className={styles.socialNetworks} ref={containerRef}>
-      <div>
-        <img src={google} alt="google icon" />
-      </div>
-      <div>
-        <img src={instagram} alt="instagram icon" />
-      </div>
-      <div>
-        <img src={meta} alt="meta icon" />
-      </div>
-      <div>
-        <img src={tiktok} alt="tiktok icon" />
-      </div>
-      <div>
-        <img src={twitter} alt="twitter icon" />
-      </div>
-      <div>
-        <img src={youtube} alt="youtube icon" />
-      </div>
+      <a href="https://www.tiktok.com/@arvrtise" target="_blank" rel="noopener noreferrer">
+        <div>
+          <img src={tiktok} alt="tiktok icon" />
+        </div>
+      </a>
     </div>
   );
 };

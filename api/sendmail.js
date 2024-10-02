@@ -39,7 +39,7 @@ const createMailOptions = (name, firstname, email, phonenumber, message) => ({
 
 // Function to create reply options for sending confirmation emails
 const createReplyOptions = (name, firstname, email, message) => ({
-  from: `Arvrtise Tok | Your Social Media Agency <${process.env.VITE_REACT_APP_RECEIVING_EMAIL}>`,
+  from: `Arvrtise Tok | Your TikTok Studio Agency <${process.env.VITE_REACT_APP_RECEIVING_EMAIL}>`,
   to: `${email}`,
   subject: "Thank You for Your Interest",
   html: `

@@ -24,22 +24,14 @@ function Contact() {
                   <img src={tiktok_icon} alt="tiktok icon" />
                 </a>
               </div>
-              <div className={styles.social_icon}>
-                <a
-                  href="https://www.instagram.com/sfmedia_agentur/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src={instagram_icon} alt="instagram icon" />
-                </a>
-              </div>
               <div className={styles.social_icon}></div>
             </div>
           </div>
         </div>
         <div className={styles.contact_form}>
           <h2 className={styles.form_title}>
-              Contact us <br /> to <span>learn more</span>
+              Fill out a lead form on TikTok <a href="https://www.tiktok.com/@arvrtise" target="_blank" rel="noreferrer">
+              <b>here</b></a> or contact us <br /> for <span>a quote.</span>
           </h2>
           <ContactForm />
         </div>
