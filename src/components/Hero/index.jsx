@@ -14,7 +14,7 @@ const Home = () => {
 
   useEffect(() => {
     if (!isMobile) {
-      // Only run this code on desktop
+      // Run only on desktop
       const tl = gsap.timeline();
       const dimension = "width";
       const direction = "x";
@@ -41,14 +41,25 @@ const Home = () => {
     <div ref={homeRef} className={styles.home} id="startseite">
       <div className={styles.intro}>
         <h1 className={styles.title}>
-          Short Viral
-          <br /> TikTok Creators
+          🏠 <strong>RNTBNB TikTok Rentals</strong>
         </h1>
         <p className={styles.description}>
-          🎬 Cut raw video footage into cool 60-second reels.<br />
-          🎮 Branded AR effects 📣 Ad campaigns 🔥 Branded CapCut Memes
+          🪙 Earn <strong>Bitcoin $RNT</strong> every time you rent. 🎦 Your <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a> video becomes your proof of stay. Follow <a href="https://www.tiktok.com/@rntbnb" target="_blank" rel="noopener noreferrer">
+            @RNTBNB
+          </a> 📍 All you need: the{" "}
+          <a href="https://what3words.com" target="_blank" rel="noopener noreferrer">
+            What3Words app
+          </a>,{" "}
+          <a href="https://phantom.app" target="_blank" rel="noopener noreferrer">
+            Phantom Wallet
+          </a>, and a{" "}
+          <a href="https://hahz.live" target="_blank" rel="noopener noreferrer">
+            HAHZ.LIVE subscription
+          </a>.<br />
+          {" "}
         </p>
       </div>
+
       <div className={styles.hero}>
         <div className={styles.container} ref={containerRef}>
           <HeroCollection isMobile={isMobile} />

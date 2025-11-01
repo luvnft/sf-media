@@ -7,7 +7,6 @@
   flex-direction: row;
 }
 
-.wrapper .image,
 .wrapper .image {
   margin: 0;
   padding: 0;
@@ -16,6 +15,7 @@
   object-fit: cover;
   margin-right: 1.5rem;
   filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.25));
+  transition: transform 0.5s ease, filter 0.5s ease;
 }
 
 .wrapperMobile {
@@ -35,17 +35,31 @@
   object-fit: cover;
   margin-bottom: 1.5rem;
   filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.25));
+  transition: transform 0.5s ease, filter 0.5s ease;
 }
 
+/* Optional: fun alternating layout without greying */
 .image:nth-child(even) {
-  filter: saturate(0) contrast(1.1);
   margin-top: -1%;
 }
 
 .image:nth-child(odd) {
-  filter: saturate(0.6) contrast(1.1);
+  margin-top: 1%;
 }
 
+/* Remove the dull overlay — keep natural brightness */
+.image {
+  opacity: 1;
+  filter: none;
+}
+
+/* Add slight interactivity (hover effect) */
+.image:hover {
+  transform: scale(1.03);
+  filter: brightness(1.1);
+}
+
+/* Last image spacing cleanup */
 .image:last-child {
   margin-right: 0;
   line-height: 0;

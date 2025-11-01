@@ -74,9 +74,7 @@ function Services() {
 
     return () => {
       ScrollTrigger.getAll().forEach((st) => st.kill());
-      gsap.set([decoWord, colorSpan, ...children], {
-        clearProps: "all",
-      });
+      gsap.set([decoWord, colorSpan, ...children], { clearProps: "all" });
     };
   }, [isMobile]);
 
@@ -84,72 +82,91 @@ function Services() {
     <section className={styles.services} id="dienstleistungen">
       <div className={styles.container}>
         <div className={styles.servicesIntro}>
-          <img
-            className={styles.crosshair}
-            src={crosshair}
-            alt="crosshair decoration"
-          />
-          <img
-            className={styles.circleDashed}
-            src={circleDashed}
-            alt="dashed circle decoration"
-          />
+          <img className={styles.crosshair} src={crosshair} alt="crosshair decoration" />
+          <img className={styles.circleDashed} src={circleDashed} alt="dashed circle decoration" />
+
           <p className={styles.decoWord} ref={decoWordRef}>
-            Studio
+            RNTBNB
           </p>
           <h2>
-            TikTok
-            <br />
             <span className="color" ref={colorSpanRef}>
-            Industries
+              Tokenized Real Estate
             </span>
+            <br /> The Future of Trust in Rentals
           </h2>
+
           <div className="spacer"></div>
+
           <p>
-            47% of TikTokers use products or services they discovered<br />
-            on TikTok – all thanks to the relatability and talent of<br />
-            the platform’s many content creators. By leveraging the<br />
-            Creator Marketplace, we align your brand with the best content<br />
-            or hyper-local content creators to boost your brand.
+            RNTBNB transforms how the world rents, buys, and stays — by verifying every host,
+            renter, and property through{" "}
+            <strong>Phantom Wallet</strong> instead of paperwork, email threads, or leases.
+            <br />
+            <br />
+            Each rental is <strong>tokenized and mapped</strong> to its unique{" "}
+            <a href="https://what3words.com" target="_blank" rel="noopener noreferrer">
+              What3Words
+            </a>{" "}
+            address, solving modern housing issues such as:
+            <br />
+            <br />
+            🧠 <strong>AI Deepfake Prevention:</strong> Every rental and renter is verified on-chain
+            through a real wallet signature, not a fake ID or photo.
+            <br />
+            🚫 <strong>Anti-Fraud & Anti-Squatting:</strong> Tokens confirm true ownership and
+            occupancy — no fake listings or hijacked leases.
+            <br />
+            💎 <strong>No Paperwork:</strong> Payments, contracts, and receipts are stored directly
+            in both host and renter wallets.
+            <br />
+            🌍 <strong>Housing Crisis Solution:</strong> Fractionalized ownership lets anyone invest
+            in real properties, creating community-based housing opportunities.
           </p>
         </div>
+
         <div className={styles.servicesList} ref={servicesListRef}>
-          <img
-            className={styles.circles}
-            src={circles}
-            alt="simple circles decoration"
-          />
+          <img className={styles.circles} src={circles} alt="simple circles decoration" />
+
+          {/* REAL ESTATE */}
           <ServicesItem
             icon={<img src={realEstate} alt="Real Estate icon" />}
-            title="Real Estate"
-            description="Create real estate content that Gen-Z won't fall asleep watching."
+            title="🏠 Real Estate"
+            description="The new era of leasing and rentals. Each property is mapped to a What3Words address and represented as an $RNTBNB coin — letting anyone rent, verify, or invest in fractional real estate directly through Phantom Wallet."
           />
+
+          {/* TRAVEL */}
           <ServicesItem
             icon={<img src={travel} alt="travel icon" />}
-            title="Travel"
-            description="Arvrtise partnered with What3Words to create content mapped to a specific 3m x 3m square 3-word address anywhere in the world you can travel to."
+            title="✈️ Travel"
+            description="Hotels and Airbnb-style hosts can map their What3Words locations to accept Bitcoin $RNT or $USDC for bookings. Every verified stay creates a ReelView proof-of-travel clip and earns rewards for both guest and host."
           />
+
+          {/* CARS */}
           <ServicesItem
             icon={<img src={car} alt="car icon" />}
-            title="Cars"
-            description="Arvrtise partnered with What3Words to map cars to a specific 3m x 3m square 3-word address on a car lot or on street."
+            title="🚗 Cars"
+            description="Car owners can map their vehicle’s location to a What3Words address and rent it out for Bitcoin $RNT. GPS verification ensures authenticity, and renters receive fractional tokens for verified returns."
           />
+
+          {/* SERVICES */}
           <ServicesItem
-            icon={<img src={crypto} alt="crypto icon" />}
-            title="Crypto & AI"
-            description="Marketing crypto or AI to the masses isn't easy, we create cool and short explainer trending videos the masses can relate to."
+            icon={<img src={crypto} alt="services icon" />}
+            title="💼 Services"
+            description="If you provide a local service — like photography, plumbing, or lawn care — you can rent your time and skill mapped to your What3Words area. Clients pay in $RNT or $USDC and verified bookings unlock $RNT rewards."
           />
+
+          {/* FOOD */}
           <ServicesItem
             icon={<img src={food} alt="food icon" />}
-            title="Food"
-            description="Foodies can scale a small restaurant to a multi-state, medium-sized brand overnight. Let us make that your new reality."
+            title="🍽️ Food"
+            description="Restaurants can map each table to a What3Words address — letting customers rent private dining spaces for events, VIP dinners, or birthdays. Each booking rewards both the host and guest in Bitcoin $RNT."
           />
+
+          {/* BEAUTY */}
           <ServicesItem
-            icon={
-              <img src={beauty} alt="beauty icon" />
-            }
-            title="Beauty"
-            description="Create branded hair, beauty or game AR effects that your clients can engage with and share while sitting in your chair. "
+            icon={<img src={beauty} alt="beauty icon" />}
+            title="💇 Beauty"
+            description="Salons can map individual chairs to What3Words addresses. Renters pay in $USDC or $RNT, and stylists can reward clients with $RNT for completing bookings, leaving verified reviews, or sharing TikTok ReelViews."
           />
         </div>
       </div>

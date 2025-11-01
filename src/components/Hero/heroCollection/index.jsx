@@ -37,15 +37,15 @@ const HeroCollection = ({ isMobile }) => {
     const staggerDelay = isMobile ? 0.6 : 0.4;
 
     displayImages.forEach((_, i) => {
-      const initialScale = isMobile ? 0.7 : 1;
-      // Ustawiamy początkową wartość autoAlpha na 0.8 dla pierwszego obrazka, a dla reszty na 0
-      const initialAutoAlpha = i === 0 ? 0.5 : 0;
+      const initialScale = isMobile ? 0.9 : 1; // smaller scale reduction
+      const initialAutoAlpha = 0; // fully transparent before animation (no dim overlay)
+
       tl.fromTo(
         wrapperRef.current.children[i],
         { autoAlpha: initialAutoAlpha, y: direction, scale: initialScale },
         {
           duration: duration,
-          autoAlpha: 1,
+          autoAlpha: 1, // full brightness
           y: 0,
           scale: 1,
           ease: "power2.out",

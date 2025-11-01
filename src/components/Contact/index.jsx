@@ -1,39 +1,63 @@
 import React from "react";
 import styles from "./Contact.module.css";
-import instagram_icon from "../../assets/images/contactIcons/instagram.svg";
-import tiktok_icon from "../../assets/images/contactIcons/tiktok.svg"; // Update to the correct TikTok icon path
-import logo from "../../assets/images/atok.svg";
-import ContactForm from "./ContactForm/index";
+import tiktok_icon from "../../assets/images/contactIcons/tiktok.svg";
+import logo from "../../assets/images/rntbnb_logo.svg";
 
 function Contact() {
+  // Add TikTok embed script dynamically
+  React.useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://www.tiktok.com/embed.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Cleanup script when component unmounts
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <section className={styles.contact} id="kontakt">
       <div className={styles.container}>
         <div className={styles.company_info}>
           <div className={styles.logo}>
-            <img src={logo} alt="atok Logo" />
+            <img src={logo} alt="rntbnb_logo" />
           </div>
           <div className={styles.contact_info}>
             <div className={styles.social_media}>
               <div className={styles.social_icon}>
                 <a
-                  href="https://www.tiktok.com/@arvrtise" // Update this with your TikTok link
+                  href="https://www.tiktok.com/@rntbnb"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <img src={tiktok_icon} alt="tiktok icon" />
                 </a>
               </div>
-              <div className={styles.social_icon}></div>
             </div>
           </div>
-        </div>
-        <div className={styles.contact_form}>
-          <h2 className={styles.form_title}>
-              Fill out a lead form on TikTok <a href="https://www.tiktok.com/@arvrtise" target="_blank" rel="noreferrer">
-              <b>here</b></a> or contact us <br /> for <span>a quote.</span>
-          </h2>
-          <ContactForm />
+          
+          {/* TikTok Embed Section */}
+          <div className={styles.tiktok_embed}>
+            <blockquote 
+              className="tiktok-embed" 
+              cite="https://www.tiktok.com/@rntbnb" 
+              data-unique-id="rntbnb" 
+              data-embed-type="creator" 
+              style={{ maxWidth: '780px', minWidth: '288px' }}
+            >
+              <section>
+                <a 
+                  target="_blank" 
+                  href="https://www.tiktok.com/@rntbnb?refer=creator_embed"
+                  rel="noreferrer"
+                >
+                  @rntbnb
+                </a>
+              </section>
+            </blockquote>
+          </div>
         </div>
       </div>
     </section>

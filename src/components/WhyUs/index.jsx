@@ -56,7 +56,7 @@ const WhyUs = () => {
       }
     );
 
-    children.forEach((child, index) => {
+    children.forEach((child) => {
       gsap.fromTo(
         child,
         { y: 50, autoAlpha: 0 },
@@ -75,68 +75,108 @@ const WhyUs = () => {
   }, [isMobile]);
 
   return (
-    <section className={styles.whyUs} id="warum-wir">
+    <section className={styles.whyUs} id="why-us">
       <div className={styles.rightColumn}>
-        <img
-          className={styles.crosshair}
-          src={crosshair}
-          alt="crosshair decoration"
-        />
-        <img
-          className={styles.circleDashed}
-          src={circleDashed}
-          alt="dashed circle decoration"
-        />
+        <img className={styles.crosshair} src={crosshair} alt="crosshair decoration" />
+        <img className={styles.circleDashed} src={circleDashed} alt="dashed circle decoration" />
+
         <div className={styles.whyUsIntro}>
           <p className={styles.decoWord} ref={decoWordRef}>
-            EFFECTS
+            REELVIEW
           </p>
           <h2>
-            Create an <br />
-            <span className="color" ref={colorSpanRef}>
-            Affordable</span> Branded Effect
+           🎙️ Every RNTal Comes With a TikTok AR{" "}
+          <span className="color" ref={colorSpanRef}>
+              ReelView
+          </span>{" "}
+              Mic Mapped to Its What3Words Address
           </h2>
+
           <div className="spacer"></div>
+
           <p className={styles.descriptionIntro}>
-             💡 Create a challenge to boost a service or product.<br />
-             💡 Create a branded game customers can play while waiting for your service.<br />
-             💡 Pay an TikTok influencer to promote your branded AR Effect<br />
-            Arvrtise is the top 5% AR Effect creators in the world.<br />
-            Studies show creative and immersive content, like AR effects, resonates well with
-            younger audiences (Gen Z and Millennials) who are the primary users of TikTok​.
+            🎙️ The <strong>ReelView Mic</strong> is a special TikTok AR Effect given to every rental
+            on <strong>RNTBNB</strong>. It’s like a digital microphone that appears on TikTok once
+            your stay is verified.
+            <br />
+            <br />
+            🎙️ Each ReelView Mic is <strong>tethered to a What3Words address</strong> (for example,
+            <em> ///keep.it.simple</em>) — that exact 3-word location is where your AR filter lives
+            on TikTok.
+            <br />
+            <br />
+            🎙️ The What3Words hashtag used for your ReelView is called a{" "}
+            <strong>HAHZtag</strong>. It matches your location and helps connect your video to your
+            verified stay — turning every rental review into proof of presence.
+            <br />
+            <br />
+            💡 In short: each rental = one AR effect, one W3W address, and one way to earn Bitcoin
+            rewards for sharing honest, verifiable experiences.
           </p>
         </div>
+
         <div className={styles.advantagesList} ref={advantagesListRef}>
-          <h4>
-            The TikTok AR creation process:
-          </h4>
+          <h4>How to Earn Bitcoin $RNT</h4>
+
+          {/* STEP 1 */}
           <div className={styles.advantageItem}>
             <div className={styles.advantageIcon}>
               <img src={tick} alt="tick icon" />
             </div>
             <p>
-              1️⃣ Show or tell us the effect that you want us to create for you.</p>
-          </div>
-          <div className={styles.advantageItem}>
-            <div className={styles.advantageIcon}>
-              <img src={tick} alt="tick icon" />
-            </div>
-            <p>2️⃣ We tell you the cost and turnaround time via email or in a private Arvrtise Discord channel.</p>
-          </div>
-          <div className={styles.advantageItem}>
-            <div className={styles.advantageIcon}>
-              <img src={tick} alt="tick icon" />
-            </div>
-            <p>
-               3️⃣ Review the effect before we publish it to the world. The effect will go live 12 to 24 hours after we publish it.
+              1️⃣ Click the{" "}
+              <a
+                href="https://www.tiktok.com/@rntbnb"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @RNTBNB
+              </a>{" "}
+              bio link, then tap the magic 🪄 wand icon to find your rental’s What3Words address and its
+              matching ReelView Mic.
             </p>
           </div>
+
+          {/* STEP 2 */}
           <div className={styles.advantageItem}>
             <div className={styles.advantageIcon}>
               <img src={tick} alt="tick icon" />
             </div>
             <p>
-              4️⃣ We will send you the link and QR code once it's live. Anyone can search for the effect name, and we will provide you with analytics every 30 days.
+              2️⃣ Record a short <strong>ReelView</strong> (up to 11 seconds) using your rental’s
+              AR mic. Tag both your host and{" "}
+              <a
+                href="https://www.tiktok.com/@rntbnb"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @RNTBNB
+              </a>{" "}
+              and include your What3Words hashtag in the caption — that’s your proof of stay.
+            </p>
+          </div>
+
+          {/* STEP 3 */}
+          <div className={styles.advantageItem}>
+            <div className={styles.advantageIcon}>
+              <img src={tick} alt="tick icon" />
+            </div>
+            <p>
+              3️⃣ Once your post is live, your host and RNTBNB team verify your ReelView video to
+              confirm the location and timestamp. Verified posts automatically qualify for{" "}
+              <strong>Bitcoin $RNT rewards</strong>.
+            </p>
+          </div>
+
+          {/* STEP 4 */}
+          <div className={styles.advantageItem}>
+            <div className={styles.advantageIcon}>
+              <img src={tick} alt="tick icon" />
+            </div>
+            <p>
+              4️⃣ If you loved the experience, you can invest in that property’s{" "}
+              <strong>RNTBNB Coin</strong> — a digital share mapped to the same What3Words address.
+              Share your ReelView again to boost its visibility and grow your ownership over time.
             </p>
           </div>
         </div>

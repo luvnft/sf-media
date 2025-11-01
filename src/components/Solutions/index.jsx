@@ -17,10 +17,13 @@ const Solutions = () => {
   const colorSpanRef = useRef(null);
   const descriptionIntroRef = useRef(null);
   const isMobile = useIsMobile();
+
   useScrollRotateAnimation(styles.circleDashed);
 
   useEffect(() => {
     const solutionsList = solutionsListRef.current;
+    if (!solutionsList) return;
+
     const children = Array.from(solutionsList.children);
     const decoWord = decoWordRef.current;
     const colorSpan = colorSpanRef.current;
@@ -100,56 +103,127 @@ const Solutions = () => {
 
   return (
     <div className={styles.solutions} id="losungen">
-      <img
-        className={styles.crosshair}
-        src={crosshair}
-        alt="crosshair decoration"
-      />
-      <img
-        className={styles.circles}
-        src={circles}
-        alt="simple circles decoration"
-      />
-      <img
-        className={styles.circleDashed}
-        src={circleDashed}
-        alt="dashed circle decoration"
-      />
+      <img className={styles.crosshair} src={crosshair} alt="crosshair decoration" />
+      <img className={styles.circles} src={circles} alt="circles decoration" />
+      <img className={styles.circleDashed} src={circleDashed} alt="dashed circle decoration" />
+
       <div className={styles.solutionsIntro}>
         <p className={styles.decoWord} ref={decoWordRef}>
-          SHORTS
+          SUB
         </p>
         <h2>
-          24 Hour{" "}
+          1️⃣ SUBSCRIBE TO{" "}
           <span className="color" ref={colorSpanRef}>
-            Turnaround{" "}
+            HAHZ.LIVE{" "}
           </span>
-          <br />
-          Time
+          <br /> TO START
         </h2>
+
         <div className="spacer"></div>
+
         <p ref={descriptionIntroRef}>
-          We streamlined the process of hiring a third-party marketing agency
-          with a simple four-step process that even a non-tech-savvy person can follow.
-          Join our Arvrtise  <a href="https://discord.gg/tCxuCX2X2Y">Discord</a> to get started.
+          👻 <strong>RENTER — 💟 Tribe Tier</strong>
+          <br />
+          🎭 Get your TikTok AR ID and match your verified 👻 @ handle.
+          <br />
+          📍 Every rental you film = <em>Proof of Presence</em> via{" "}
+          <a href="https://what3words.com" target="_blank" rel="noopener noreferrer">
+            What3Words
+          </a>{" "}
+          verified clips.
+          <br />
+          🎙️ Post a short <strong>ReelView</strong> and unlock rewards —{" "}
+          <strong>Bitcoin $RNT</strong> airdropped by your host.
+          <br />
+          <br />
+          👻 <strong>HOST — ☯️ Ascension Tier</strong>
+          <br />
+          📍 Unlock your TikTok AR Rental Map Pin linked to your{" "}
+          <a href="https://what3words.com" target="_blank" rel="noopener noreferrer">
+            What3Words
+          </a>{" "}
+          rental address.
+          <br />
+          🎙️ Activate your <strong>ReelView Mic</strong> for verified TikTok reel reviews.
+          <br />
+          🪙 Every rental = a <strong>RNTBNB coin</strong> mapped to your verified location.
+          <br />
+          🏠 Reward renters in <strong>Bitcoin $RNT</strong> whenever they share a ReelView.
+          <br />
+          <br />
+          💡 <strong>3️⃣ Post Your RNTBNB Listing:</strong> Upload a short TikTok showing your
+          rental or item (car, booth, camera, etc.) with a caption like:
+          <br />
+          <em>
+            "Just listed on RNTBNB 📍 ///music.house.vibes — earn Bitcoin $RNT for verified
+            stays!"
+          </em>
+          <br />
+          <br />
+          💎 Mint{" "}
+          <a href="https://uniscan.cc/brc20/%24RNT" target="_blank" rel="noopener noreferrer">
+            $RNT
+          </a>{" "}
+          then sell it in the{" "}
+          <a href="https://app.luvnft.com/groups/rntbnb/" target="_blank" rel="noopener noreferrer">
+            RNTBNB Tribe
+          </a>
+          .
         </p>
       </div>
+
       <div className={styles.solutionsList} ref={solutionsListRef}>
         <SolutionItem
-          title="🎯 Goals"
-          description="Tell us your end goal and we take it from there."
+          title="👻 Phantom Wallet"
+          description={
+            <>
+              Set up your wallet at{" "}
+              <a href="https://phantom.app" target="_blank" rel="noopener noreferrer">
+                Phantom.app
+              </a>{" "}
+              to receive Bitcoin $RNT rewards from verified stays and ReelViews.
+            </>
+          }
         />
+
         <SolutionItem
-          title="🔴 Record"
-          description="Send us your edited or raw videos."
+          title="📍 What3Words"
+          description={
+            <>
+              Each rental location is anchored to a{" "}
+              <a href="https://what3words.com" target="_blank" rel="noopener noreferrer">
+                What3Words
+              </a>{" "}
+              address — the foundation for both its AR effect and its digital rental identity.
+            </>
+          }
         />
+
         <SolutionItem
-          title="🎬 Cut"
-          description="We trim the recorded video down as short as possible and add a touch of Gen-Z sauce on it."
+          title="🎙️ ReelView"
+          description={
+            <>
+              Each rental’s What3Words address powers a TikTok AR effect discoverable by simply
+              searching that location. Renters film and post short TikToks or Reels tied to their
+              verified address, creating public proof of stay and social engagement.
+            </>
+          }
         />
+
         <SolutionItem
-          title="👨🏼‍🍳 Cook"
-          description="Walla, your video is ready within 24 hours to be served to the masses. Arvrtise Discord users have priority."
+          title="🪙 RNTBNB Coin"
+          description={
+            <>
+              Every rental is mapped to its What3Words address through an <strong>$RNTBNB coin</strong>.
+              This coin functions as a digital escrow—allowing renters to pay hosts directly and gain
+              fractional real estate ownership of the property. It’s a transparent, community-driven way
+              to build equity from every verified stay on the{" "}
+              <a href="https://hahz.live" target="_blank" rel="noopener noreferrer">
+                HAHZ.LIVE
+              </a>{" "}
+              network.
+            </>
+          }
         />
       </div>
     </div>

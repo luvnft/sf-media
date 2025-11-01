@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import styles from "./Navigation.module.css";
-import logo from "../../assets/images/atok.svg";
+import logo from "../../assets/images/rntbnb_logo.svg";
 import "gsap/ScrollTrigger";
 import { gsap } from "gsap";
 
@@ -14,16 +14,36 @@ function Navigation() {
     setIsOpen(!isOpen);
   };
 
-  const handleNavigation = (e, url) => {
-    e.preventDefault();
-    const element = document.getElementById(url);
-    window.history.pushState({}, "", `/${url}`);
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop,
-        behavior: "smooth",
-      });
+  const menuItems = [
+    {
+      name: "SUB 👉 HAHZ.LIVE",
+      href: "https://hahz.live",
+      emoji: "👉"
+    },
+    {
+      name: "DL 📍WHAT3WORDS",
+      href: "https://what3words.com",
+      emoji: "📍"
+    },
+    {
+      name: "DL 👻 PHANTOM",
+      href: "https://phantom.com",
+      emoji: "👻"
+    },
+    {
+      name: "FOLLOW 👻@HAHZLIVE",
+      href: "https://phantom.com/user/hahzlive",
+      emoji: "👻"
+    },
+    {
+      name: "FOLLOW 📲@RNTBNB",
+      href: "https://tiktok.com/@rntbnb",
+      emoji: "📲"
     }
+  ];
+
+  const handleExternalLink = (href) => {
+    window.open(href, "_blank", "noopener noreferrer");
     setIsOpen(false);
   };
 
@@ -94,7 +114,7 @@ function Navigation() {
     <nav className={styles.nav} aria-label="breadcrumb">
       <div className={styles.logo}>
         <a href="/">
-          <img src={logo} alt="sf-media logo" />
+          <img src={logo} alt="RNTBNB logo" />
         </a>
       </div>
       <div
@@ -126,56 +146,24 @@ function Navigation() {
         <div
           className={styles.menu}
           ref={menuRef}
-          onClick={() => {
-            setIsOpen(false);
-          }}
         >
           <ul>
-            <li>
-              <a
-                href="/startseite"
-                onClick={(e) => handleNavigation(e, "startseite")}
-              >
-                <span>Startseite</span>
-                <span className={styles.hoverText}>Startseite</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="/losungen"
-                onClick={(e) => handleNavigation(e, "losungen")}
-              >
-                <span>Lösungen</span>
-                <span className={styles.hoverText}>Lösungen</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="/warum-wir"
-                onClick={(e) => handleNavigation(e, "warum-wir")}
-              >
-                <span>Warum wir?</span>
-                <span className={styles.hoverText}>Warum wir?</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="/dienstleistungen"
-                onClick={(e) => handleNavigation(e, "dienstleistungen")}
-              >
-                <span>Dienstleistungen</span>
-                <span className={styles.hoverText}>Dienstleistungen</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="/kontakt"
-                onClick={(e) => handleNavigation(e, "kontakt")}
-              >
-                <span>Kontakt</span>
-                <span className={styles.hoverText}>Kontakt</span>
-              </a>
-            </li>
+            {menuItems.map((item, index) => (
+              <li key={index}>
+                <button
+                  className={styles.menuItem}
+                  onClick={() => handleExternalLink(item.href)}
+                  aria-label={item.name}
+                >
+                  <span className={styles.menuText}>
+                    {item.name}
+                  </span>
+                  <span className={styles.hoverText}>
+                    {item.name}
+                  </span>
+                </button>
+              </li>
+            ))}
           </ul>
         </div>
       )}
