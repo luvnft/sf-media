@@ -42,7 +42,7 @@ const SocialNetworks = () => {
 
   return (
     <div className={styles.socialNetworks} ref={containerRef}>
-      <a href="https://www.tiktok.com/@arvrtise" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.tiktok.com/@rntbnb" target="_blank" rel="noopener noreferrer">
         <div>
           <img src={tiktok} alt="tiktok icon" />
         </div>
