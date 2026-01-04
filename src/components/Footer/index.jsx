@@ -52,11 +52,6 @@ function Footer() {
 
   const externalLinks = [
     { 
-      name: "LUV NFT GROUP", 
-      href: "https://app.luvnft.com/groups/rntbnb/",
-      icon: "🔗"
-    },
-    { 
       name: "@RNTBNB", 
       href: "https://tiktok.com/@rntbnb",
       icon: "🎵"
@@ -73,12 +68,12 @@ function Footer() {
           </p>
           <p className={styles.credits}>
             <a 
-              href="https://hahz.live" 
+              href="https://blkluv.org" 
               target="_blank" 
               rel="noopener noreferrer"
               className={styles.creditLink}
             >
-              powered by <span className={styles.brandName}>HAHZ.LIVE</span>
+              powered by <span className={styles.brandName}>BLKLUV.ORG</span>
               <span className={styles.brandDot}>.</span>
             </a>
           </p>
