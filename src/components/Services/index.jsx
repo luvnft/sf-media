@@ -6,12 +6,6 @@ import crosshair from "../../assets/images/decorations/crosshair.svg";
 import circles from "../../assets/images/decorations/circles.svg";
 import circleDashed from "../../assets/images/decorations/circleDashed.svg";
 import ServicesItem from "./ServicesList/index";
-import realEstate from "../../assets/images/servicesIcons/real_estate_tiktok.png";
-import travel from "../../assets/images/servicesIcons/travel_tiktok.png";
-import car from "../../assets/images/servicesIcons/car_tiktok.png";
-import crypto from "../../assets/images/servicesIcons/ai_crypto_tiktok.png";
-import food from "../../assets/images/servicesIcons/food_tiktok.png";
-import beauty from "../../assets/images/servicesIcons/beauty_tiktok.png";
 import useScrollRotateAnimation from "../../hooks/useScrollRotateAnimation";
 import useIsMobile from "../../hooks/useIsMobile";
 
@@ -115,44 +109,38 @@ function Services() {
 
           {/* REAL ESTATE */}
           <ServicesItem
-            icon={<img src={realEstate} alt="Real Estate icon" />}
             title="🏠 Real Estate"
-            description="The new era of leasing and rentals. Each property is mapped to a What3Words address and represented as an $RNTBNB coin — letting anyone rent, verify, or invest in fractional real estate directly through Phantom Wallet."
+            description="60% of TikTok users discover new brands on the platform — and real estate videos get 3x more engagement than other industries."
           />
 
           {/* TRAVEL */}
           <ServicesItem
-            icon={<img src={travel} alt="travel icon" />}
             title="✈️ Travel"
-            description="Hotels and Airbnb-style hosts can map their What3Words locations to accept Bitcoin $RNT or $USDC for bookings. Every verified stay creates a ReelView proof-of-travel clip and earns rewards for both guest and host."
+            description="Travel is TikTok's #2 most-watched content category, with vacation rental tours getting 62% more saves than hotel promotions."
           />
 
           {/* CARS */}
           <ServicesItem
-            icon={<img src={car} alt="car icon" />}
             title="🚗 Cars"
-            description="Car owners can map their vehicle’s location to a What3Words address and rent it out for Bitcoin $RNT. GPS verification ensures authenticity, and renters receive fractional tokens for verified returns."
+            description="Car rental content on TikTok gets 89% higher engagement than traditional auto ads, with rental walkthrough videos being the most-shared format."
           />
 
           {/* SERVICES */}
           <ServicesItem
-            icon={<img src={crypto} alt="services icon" />}
             title="💼 Services"
-            description="If you provide a local service — like photography, plumbing, or lawn care — you can rent your time and skill mapped to your What3Words area. Clients pay in $RNT or $USDC and verified bookings unlock $RNT rewards."
+            description="Service industry TikTok content converts 71% higher than text reviews, with transformation videos reducing customer hesitation by 64%."
           />
 
           {/* FOOD */}
           <ServicesItem
-            icon={<img src={food} alt="food icon" />}
             title="🍽️ Food"
-            description="Restaurants can map each table to a What3Words address — letting customers rent private dining spaces for events, VIP dinners, or birthdays. Each booking rewards both the host and guest in Bitcoin $RNT."
+            description="Restaurant TikTok videos drive 3x more visits than Google reviews, with food tour videos being saved 67% more often."
           />
 
           {/* BEAUTY */}
           <ServicesItem
-            icon={<img src={beauty} alt="beauty icon" />}
             title="💇 Beauty"
-            description="Salons can map individual chairs to What3Words addresses. Renters pay in $USDC or $RNT, and stylists can reward clients with $RNT for completing bookings, leaving verified reviews, or sharing TikTok ReelViews."
+            description="Beauty service TikTok videos get 5x more shares than Instagram before/afters, with appointment bookings increasing 82% after video reviews."
           />
         </div>
       </div>
