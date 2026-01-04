@@ -85,11 +85,10 @@ const WhyUs = () => {
             REELVIEW
           </p>
           <h2>
-           🎙️EVERY RNTAL HAS A {" "}
-          <span className="color" ref={colorSpanRef}>
+            🎙️ EVERY RNTAL HAS A {" "}
+            <span className="color" ref={colorSpanRef}>
               REELVIEW
-          </span>{" "}
-              
+            </span>
           </h2>
 
           <div className="spacer"></div>
@@ -97,9 +96,9 @@ const WhyUs = () => {
           <p className={styles.descriptionIntro}>
             🎙️ We solved the biggest problem with traditional rental apps not keeping it real when it comes to their rental reviews
             with a new social transparent TikTok AR effect review called ReelView. 
-            <br></br>
+            <br /><br />
             Each ReelView Mic is pinned to a What3Words address (for example 📍///keep.it.simple) — that exact 3-word location is the
-            name of the ReelView and the TikTok hashtag for the RNTal is #… 
+            name of the ReelView and the TikTok hashtag for the RNTal is #…
           </p>
         </div>
 
@@ -139,7 +138,7 @@ const WhyUs = () => {
               >
                 @RNTBNB
               </a>{" "}
-              and include your What3Words hashtag in the caption — that’s your proof of stay.
+              and include your What3Words hashtag in the caption — that's your proof of stay.
             </p>
           </div>
 
@@ -153,6 +152,15 @@ const WhyUs = () => {
               to confirm the location and timestamp.
             </p>
           </div>
+
+          {/* STEP 4 - Added missing step */}
+          <div className={styles.advantageItem}>
+            <div className={styles.advantageIcon}>
+              <img src={tick} alt="tick icon" />
+            </div>
+            <p>
+              4️⃣ After verification, you'll receive Bitcoin $RNT tokens directly to your 
+              Phantom wallet as a reward for your honest review!
             </p>
           </div>
         </div>
