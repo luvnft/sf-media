@@ -4,242 +4,199 @@ import styles from "./Datenschutz.module.css";
 function Datenschutz() {
   return (
     <div className={styles.content}>
-      <h2>Datenschutzerklärung</h2>
+      <h2>RNTBNB Privacy Policy</h2>
 
       <p>
-        Im Folgenden informieren wir über die Erhebung personenbezogener Daten
-        bei Nutzung unserer Website. Personenbezogene Daten sind alle Daten, die
-        auf Sie persönlich beziehbar sind, z. B. Name und Kontaktdaten.
+        Below we inform you about the collection of personal data when using our RNTBNB platform. 
+        Personal data is any data that can be related to you personally, e.g., name, contact details, and booking information.
       </p>
 
-      <h4>Grundlegendes</h4>
+      <h4>Basics</h4>
 
-      <p>Diese aktuell gültige Datenschutzerklärung hat den Stand März 2023.</p>
+      <p>This current privacy policy is valid as of [Current Date].</p>
       <p>
-        Der Websitebetreiber nimmt Ihren Datenschutz sehr ernst und behandelt
-        Ihre personenbezogenen Daten vertraulich und entsprechend der
-        gesetzlichen Vorschriften. Da durch neue Technologien, die ständige
-        Weiterentwicklung dieser Webseite oder aufgrund geänderter gesetzlicher
-        oder behördlicher Vorgaben Änderungen an dieser Datenschutzerklärung
-        vorgenommen werden können, empfehlen wir Ihnen sich die
-        Datenschutzerklärung in regelmäßigen Abständen durchzulesen.
-        Definitionen der verwendeten Begriffe (z.B. “personenbezogene Daten”
-        oder “Verarbeitung”) finden Sie in Art. 4 DSGVO.
-      </p>
-      <h4>1. Verantwortliche Stelle und Kontakt</h4>
-      <p>Verantwortlicher i.S.d. des Art. 4 Nr. 7 DSGVO ist die</p>
-
-      <p>Bouchama Alexis</p>
-
-      <h4>2. Erfassung und Verarbeitung personenbezogener Daten</h4>
-
-      <p>
-        Bei Ihrer Kontaktaufnahme mit uns per E-Mail oder über ein
-        Kontaktformular werden die von Ihnen mitgeteilten Daten (Ihre
-        E-Mail-Adresse, ggf. Ihr Name und Ihre Phone) von uns
-        gespeichert, um Ihre Fragen zu beantworten. Die in diesem Zusammenhang
-        anfallenden Daten löschen wir, nachdem die Speicherung nicht mehr
-        erforderlich ist, sofern keine gesetzlichen Aufbewahrungspflichten
-        bestehen.
+        RNTBNB takes your privacy very seriously and treats your personal data confidentially 
+        and in accordance with legal requirements. Since changes to this privacy policy may be made 
+        due to new technologies, platform updates, or changes in legal requirements, we recommend 
+        that you review this policy periodically.
       </p>
 
-      <h4>a. Besuch der Website</h4>
+      <h4>1. Responsible Party and Contact</h4>
+      <p>Controller within the meaning of data protection laws is:</p>
+
+      <p>RNTBNB</p>
+      <p>Contact: [Your Contact Email]</p>
+
+      <h4>2. Collection and Processing of Personal Data</h4>
 
       <p>
-        Diese Website können Sie besuchen, ohne Angaben zu Ihrer Person zu
-        machen. In diesem Fall erheben wir nur die personenbezogenen Daten, die
-        Ihr Browser an unseren Server übermittelt. Wenn Sie unsere Webseite
-        betrachten möchten, erheben wir die folgenden Daten, die für uns
-        technisch erforderlich sind, um Ihnen unsere Webseite anzeigen zu können
-        sowie die Stabilität und Sicherheit zu gewährleisten:
+        When you contact us via email or through our platform, the data you provide 
+        (your email address, name, phone number, and booking details) will be stored 
+        to process your requests and facilitate rentals. We delete this data when it's 
+        no longer necessary for the purpose it was collected, unless legal retention periods apply.
+      </p>
+
+      <h4>a. Platform Usage</h4>
+
+      <p>
+        You can browse RNTBNB without providing personal information. In such cases, 
+        we only collect technical data that your browser transmits to our servers:
       </p>
 
       <ul>
-        <li>Domain;</li>
-        <li>IP-Adresse;</li>
-        <li>Anfragen;</li>
-        <li>Useragent;</li>
-        <li>Timestamp;</li>
-        <li>Status Code;</li>
+        <li>IP Address</li>
+        <li>Browser Type and Version</li>
+        <li>Operating System</li>
+        <li>Referrer URL</li>
+        <li>Time of Access</li>
+        <li>Interaction Data</li>
       </ul>
 
       <p>
-        Die genannten Daten werden durch uns zu folgenden Zwecken verarbeitet:
+        This data is processed for the following purposes:
       </p>
 
       <ul>
-        <li>
-          Gewährleistung eines reibungslosen Verbindungsaufbaus der Webseite;
-        </li>
-        <li>Gewährleistung einer komfortablen Nutzung unserer Webseite;</li>
-        <li>Auswertung der Systemsicherheit und -stabilität sowie</li>
-        <li>zu weiteren administrativen Zwecken.</li>
+        <li>Ensuring smooth platform functionality</li>
+        <li>Improving user experience</li>
+        <li>Maintaining system security and stability</li>
+        <li>Analyzing platform performance</li>
       </ul>
 
       <p>
-        Die Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs. 1 S. 1
-        lit. f DSGVO. Unser berechtigtes Interesse folgt aus oben aufgelisteten
-        Zwecken zur Datenerhebung. In keinem Fall verwenden wir die erhobenen
-        Daten zu dem Zweck, Rückschlüsse auf Ihre Person zu ziehen. Diese Daten
-        werden für 7 Tage gespeichert.
+        The legal basis for this data processing is our legitimate interest (Art. 6(1)(f) GDPR) 
+        in providing a secure and functional platform. We never use this data to draw conclusions 
+        about individual users. Technical data is typically stored for 30 days.
+      </p>
+
+      <h4>b. Booking and Account Creation</h4>
+
+      <p>
+        To use RNTBNB's rental services, you need to provide certain personal information 
+        including your name, email address, phone number, and payment details. This information 
+        is necessary to process bookings, verify identities, prevent fraud, and facilitate 
+        communication between hosts and guests.
       </p>
 
       <p>
-        Durch die Anonymisierung der Daten sind Rückschlüsse auf Ihre Person
-        nicht möglich.
+        Data processing for rental transactions is based on contractual necessity (Art. 6(1)(b) GDPR). 
+        We retain booking data as required by law and for legitimate business purposes.
       </p>
 
-      <h4>b. Nutzung des Kontaktformulars</h4>
+      <h4>c. Data Sharing</h4>
 
       <p>
-        Wir bieten Ihnen die Möglichkeit mit uns über ein auf der Webseite
-        bereitgestelltes Formular Kontakt aufzunehmen. Dabei ist die Angabe
-        einer gültigen E-Mail-Adresse und Ihres Namens erforderlich, damit wir
-        wissen, von wem die Anfrage stammt und um diese beantworten zu können.
-        Weitere Angaben können freiwillig getätigt werden.
+        We share necessary information with:
+      </p>
+      <ul>
+        <li>Hosts/Guests: Essential details to complete bookings</li>
+        <li>Payment Processors: To process transactions securely</li>
+        <li>Service Providers: For platform maintenance and customer support</li>
+        <li>Legal Authorities: When required by law</li>
+      </ul>
+
+      <p>
+        We do not sell your personal data to third parties.
       </p>
 
+      <h4>d. TikTok Integration</h4>
+
       <p>
-        Die Datenverarbeitung zum Zwecke der Kontaktaufnahme mit uns erfolgt
-        nach Art. 6 Abs. 1 S. 1 lit. a DSGVO auf Grundlage Ihrer freiwillig
-        erteilten Einwilligung. Die für die Benutzung des Kontaktformulars von
-        uns erhobenen personenbezogenen Daten wie Vorname, Name, IP-Adresse,
-        E-Mail-Adresse, Phone und Ihre Nachricht werden nach Erledigung
-        der von Ihnen gestellten Anfrage gelöscht, sofern dem keine gesetzlichen
-        Aufbewahrungsfristen entgegenstehen.
+        When you interact with RNTBNB through TikTok:
       </p>
+      <ul>
+        <li>We may access public profile information you've made available</li>
+        <li>Your interactions with RNTBNB content are subject to TikTok's privacy settings</li>
+        <li>We comply with TikTok's Platform Policies</li>
+      </ul>
 
-      <h4>c. Weitergabe von Daten</h4>
-
-      <p>
-        Bei der Nutzung des Kontaktformulars erfolgt keine Weitergabe Ihrer
-        personenbezogenen Daten an Dritte.
-      </p>
-
-      <h4>d. Cookies</h4>
+      <h4>e. Cookies</h4>
 
       <p>
-        Die Internetseiten verwenden teilweise so genannte Cookies. Cookies
-        richten auf Ihrem Rechner keinen Schaden an und enthalten keine Viren.
-        Cookies dienen dazu, unser Angebot nutzerfreundlicher, effektiver und
-        sicherer zu machen. Cookies sind kleine Textdateien, die auf Ihrem
-        Rechner abgelegt werden und die Ihr Browser speichert. Die meisten der
-        von uns verwendeten Cookies sind so genannte “Session-Cookies”. Sie
-        werden nach Ende Ihres Besuchs automatisch gelöscht. Andere Cookies
-        bleiben auf Ihrem Endgerät gespeichert bis Sie diese löschen. Diese
-        Cookies ermöglichen es uns, Ihren Browser beim nächsten Besuch
-        wiederzuerkennen. Sie können Ihren Browser so einstellen, dass Sie über
-        das Setzen von Cookies informiert werden und Cookies nur im Einzelfall
-        erlauben, die Annahme von Cookies für bestimmte Fälle oder generell
-        ausschließen sowie das automatische Löschen der Cookies beim Schließen
-        des Browser aktivieren. Bei der Deaktivierung von Cookies kann die
-        Funktionalität dieser Website eingeschränkt sein. Cookies, die zur
-        Durchführung des elektronischen Kommunikationsvorgangs oder zur
-        Bereitstellung bestimmter, von Ihnen erwünschter Funktionen erforderlich
-        sind, werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO gespeichert.
-        Der Websitebetreiber hat ein berechtigtes Interesse an der Speicherung
-        von Cookies zur technisch fehlerfreien und optimierten Bereitstellung
-        seiner Dienste. Soweit andere Cookies (z.B. Cookies zur Analyse Ihres
-        Surfverhaltens) gespeichert werden, werden diese in dieser
-        Datenschutzerklärung gesondert behandelt.
-      </p>
-
-      <h4>e. Plugins</h4>
-
-      <p>
-        Ein Plug-In ist ein Softwareprogramm, auf das von anderen
-        Softwareanwendungen zugegriffen werden kann, um deren Funktionalität zu
-        erweitern. Diese Website nutzt keine Plugins.
-      </p>
-
-      <h4>3. Betroffenenrechte</h4>
-
-      <p>
-        Aus der DSGVO ergeben sich für Sie als Betroffener einer Verarbeitung
-        personenbezogener Daten die folgenden Rechte:
+        Our platform uses cookies to enhance user experience. Cookies are small text files 
+        stored on your device. Most cookies we use are "session cookies" that are automatically 
+        deleted after your visit. Others remain until you delete them.
       </p>
 
       <p>
-        Gemäß Art. 15 DSGVO können Sie Auskunft über Ihre von uns verarbeiteten
-        personenbezogenen Daten verlangen. Sie können insbesondere Auskunft über
-        die Verarbeitungszwecke, die Kategorien der personenbezogenen Daten, die
-        Kategorien von Empfängern, gegenüber denen Ihre Daten offengelegt wurden
-        oder werden, die geplante Speicherdauer, das Bestehen eines Rechts auf
-        Berichtigung, Löschung, Einschränkung der Verarbeitung oder Widerspruch,
-        das Bestehen eines Beschwerderechts, die Herkunft ihrer Daten, sofern
-        diese nicht bei uns erhoben wurden, über eine Übermittlung in
-        Drittländer oder an internationale Organisationen sowie über das
-        Bestehen einer automatisierten Entscheidungsfindung einschließlich
-        Profiling und ggf. aussagekräftige Informationen zu deren Einzelheiten
-        verlangen.
+        You can configure your browser to refuse cookies or alert you when cookies are being sent. 
+        However, disabling cookies may limit platform functionality.
+      </p>
+
+      <h4>3. Your Rights</h4>
+
+      <p>
+        Under applicable data protection laws, you have the following rights:
       </p>
 
       <p>
-        Gemäß Art. 16 DSGVO können Sie unverzüglich die Berichtigung unrichtiger
-        oder die Vervollständigung Ihrer bei uns gespeicherten personenbezogenen
-        Daten verlangen.
+        <strong>Right to Access:</strong> You can request information about your personal data we process.
       </p>
 
       <p>
-        Gemäß Art. 17 DSGVO können Sie die Löschung Ihrer bei uns gespeicherten
-        personenbezogenen Daten verlangen, soweit die Verarbeitung nicht zur
-        Ausübung des Rechts auf freie Meinungsäußerung und Information, zur
-        Erfüllung einer rechtlichen Verpflichtung, aus Gründen des öffentlichen
-        Interesses oder zur Geltendmachung, Ausübung oder Verteidigung von
-        Rechtsansprüchen erforderlich ist.
+        <strong>Right to Rectification:</strong> You can request correction of inaccurate or incomplete data.
       </p>
 
       <p>
-        Gemäß Art. 18 DSGVO können Sie die Einschränkung der Verarbeitung Ihrer
-        personenbezogenen Daten verlangen, soweit die Richtigkeit der Daten von
-        Ihnen bestritten wird, die Verarbeitung unrechtmäßig ist, wir die Daten
-        nicht mehr benötigen und Sie deren
+        <strong>Right to Erasure:</strong> You can request deletion of your data, subject to legal exceptions.
       </p>
 
       <p>
-        Löschung ablehnen, weil Sie diese zur Geltendmachung, Ausübung oder
-        Verteidigung von Rechtsansprüchen benötigen. Das Recht aus Art. 18 DSGVO
-        steht Ihnen auch zu, wenn Sie gemäß Art. 21 DSGVO Widerspruch gegen die
-        Verarbeitung eingelegt haben.
+        <strong>Right to Restriction:</strong> You can request limited processing of your data in certain circumstances.
       </p>
 
       <p>
-        Gemäß Art. 20 DSGVO können Sie verlangen, Ihre personenbezogenen Daten,
-        die Sie uns bereitgestellt haben, in einem strukturierten, gängigen und
-        maschinenlesbaren Format zu erhalten oder Sie können die Übermittlung an
-        einen anderen Verantwortlichen verlangen.
+        <strong>Right to Data Portability:</strong> You can receive your data in a structured, commonly used format.
       </p>
 
       <p>
-        Gemäß Art. 7 Abs. 3 DSGVO können Sie Ihre einmal erteilte Einwilligung
-        zur Verarbeitung personenbezogener Daten jederzeit gegenüber uns
-        widerrufen. Dies hat zur Folge, dass wir die auf dieser Einwilligung
-        beruhende Datenverarbeitung für die Zukunft nicht mehr fortführen
-        dürfen.
+        <strong>Right to Object:</strong> You can object to data processing based on legitimate interests.
       </p>
 
       <p>
-        Gemäß Art. 77 DSGVO steht Ihnen das Recht zu, sich bei einer
-        Aufsichtsbehörde zu beschweren. In der Regel können Sie sich hierfür an
-        die Aufsichtsbehörde Ihres üblichen Aufenthaltsortes, Ihres
-        Arbeitsplatzes oder unseres Unternehmenssitzes wenden.
-      </p>
-      <h4>Widerspruchsrecht</h4>
-
-      <p>
-        Bei der Verarbeitung Ihrer personenbezogenen Daten auf Grundlage
-        berechtigter Interessen gemäß Art. 6 Abs. 1 S. 1 lit. f DSGVO, haben Sie
-        das Recht, gemäß Art. 21 DSGVO Widerspruch gegen die Verarbeitung Ihrer
-        personenbezogenen Daten einzulegen, soweit dafür Gründe vorliegen, die
-        sich aus Ihrer besonderen Situation ergeben oder sich der Widerspruch
-        gegen Direktwerbung richtet. Im Fall der Direktwerbung besteht für Sie
-        ein generelles Widerspruchsrecht, das von uns ohne Angabe einer
-        besonderen Situation umgesetzt wird.
+        <strong>Right to Withdraw Consent:</strong> You can withdraw previously given consent at any time.
       </p>
 
       <p>
-        Wenn Sie von Ihrem Widerspruchsrecht Gebrauch machen möchten, wenden Sie
-        sich bitte an folgende E-Mail-Adresse: alexis.bouchama@gmx.de
+        <strong>Right to Complain:</strong> You can lodge a complaint with a supervisory authority.
+      </p>
+
+      <h4>Data Security</h4>
+
+      <p>
+        We implement appropriate technical and organizational measures to protect your personal data 
+        against unauthorized access, alteration, disclosure, or destruction. However, no internet 
+        transmission is completely secure, so we encourage you to take precautions to protect your 
+        personal information.
+      </p>
+
+      <h4>Children's Privacy</h4>
+
+      <p>
+        RNTBNB is not intended for users under 18 years of age. We do not knowingly collect 
+        personal data from children. If you believe we have collected data from a child, 
+        please contact us immediately.
+      </p>
+
+      <h4>International Data Transfers</h4>
+
+      <p>
+        As a global platform, your data may be transferred to and processed in countries 
+        outside your residence. We ensure appropriate safeguards are in place for such transfers.
+      </p>
+
+      <h4>Contact Information</h4>
+
+      <p>
+        For privacy-related inquiries or to exercise your rights, contact us at:
+      </p>
+      <p>
+        Email: [privacy@rntbnb.com]<br />
+        [Your Business Address]
+      </p>
+
+      <p>
+        We aim to respond to all legitimate requests within one month.
       </p>
     </div>
   );
