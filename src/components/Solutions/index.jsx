@@ -122,53 +122,22 @@ const Solutions = () => {
         <div className="spacer"></div>
 
         <p ref={descriptionIntroRef}>
-          👻 <strong>RENTER — 💟 Tribe Tier</strong>
+          <strong>RNTer</strong>
           <br />
-          🎭 Get your TikTok AR ID and match your verified 👻 @ handle.
-          <br />
-          📍 Every rental you film = <em>Proof of Presence</em> via{" "}
-          <a href="https://what3words.com" target="_blank" rel="noopener noreferrer">
-            What3Words
-          </a>{" "}
-          verified clips.
-          <br />
-          🎙️ Post a short <strong>ReelView</strong> and unlock rewards —{" "}
-          <strong>Bitcoin $RNT</strong> airdropped by your host.
+          • DM <a href="https://tiktok.com/@rntbnb" target="_blank" rel="noopener noreferrer">@RNTBNB</a> on TikTok to receive your Stripe payment link.
+          • Your payment is held until your ReelView is verified.
+          • When you arrive, DM a short video showing the rental + your What3Words location.
+          • When you leave post your ReelView and tag your Host + @RNTBNB to confirm your stay and release payment to the host.
           <br />
           <br />
-          👻 <strong>HOST — ☯️ Ascension Tier</strong>
+          <strong>HOST</strong>
           <br />
-          📍 Unlock your TikTok AR Rental Map Pin linked to your{" "}
-          <a href="https://what3words.com" target="_blank" rel="noopener noreferrer">
-            What3Words
-          </a>{" "}
-          rental address.
-          <br />
-          🎙️ Activate your <strong>ReelView Mic</strong> for verified TikTok reel reviews.
-          <br />
-          🪙 Every rental = a <strong>RNTBNB coin</strong> mapped to your verified location.
-          <br />
-          🏠 Reward renters in <strong>Bitcoin $RNT</strong> whenever they share a ReelView.
+          • We create a TikTok AR Effect + ReelView experience pinned to your <a href="https://what3words.com" target="_blank" rel="noopener noreferrer">What3Words</a> RNTal location.
+          • We produce short rental promo reels for your listing.
+          • We run TikTok paid ad campaigns to drive bookings.
+          • RNTers post a ReelView as proof-of-stay before payment is released.
           <br />
           <br />
-          💡 <strong>3️⃣ Post Your RNTBNB Listing:</strong> Upload a short TikTok showing your
-          rental or item (car, booth, camera, etc.) with a caption like:
-          <br />
-          <em>
-            "Just listed on RNTBNB 📍 ///music.house.vibes — earn Bitcoin $RNT for verified
-            stays!"
-          </em>
-          <br />
-          <br />
-          💎 Mint{" "}
-          <a href="https://uniscan.cc/brc20/%24RNT" target="_blank" rel="noopener noreferrer">
-            $RNT
-          </a>{" "}
-          then sell it in the{" "}
-          <a href="https://app.luvnft.com/groups/rntbnb/" target="_blank" rel="noopener noreferrer">
-            RNTBNB Tribe
-          </a>
-          .
         </p>
       </div>
 
@@ -177,11 +146,11 @@ const Solutions = () => {
           title="👻 Phantom Wallet"
           description={
             <>
-              Set up your wallet at{" "}
+              Hosts create a digital wallet at{" "}
               <a href="https://phantom.app" target="_blank" rel="noopener noreferrer">
                 Phantom.app
               </a>{" "}
-              to receive Bitcoin $RNT rewards from verified stays and ReelViews.
+              to receive your RNTal payments via USDC.
             </>
           }
         />
@@ -190,11 +159,11 @@ const Solutions = () => {
           title="📍 What3Words"
           description={
             <>
-              Each rental location is anchored to a{" "}
+              Each RNTal location is pinned to a{" "}
               <a href="https://what3words.com" target="_blank" rel="noopener noreferrer">
                 What3Words
               </a>{" "}
-              address — the foundation for both its AR effect and its digital rental identity.
+              3 word address ///keep.it.simple that also acts as the RNTal TikTok social media hashtag #KeepItSimple.
             </>
           }
         />
@@ -203,25 +172,17 @@ const Solutions = () => {
           title="🎙️ ReelView"
           description={
             <>
-              Each rental’s What3Words address powers a TikTok AR effect discoverable by simply
-              searching that location. Renters film and post short TikToks or Reels tied to their
-              verified address, creating public proof of stay and social engagement.
+              Each RNTal has a TikTok AR Effect ReelView pinned to the What3Words address so future RNTers can watch
+              all of the past RNTers reviews in the form of a Reel.
             </>
           }
         />
 
         <SolutionItem
-          title="🪙 RNTBNB Coin"
+          title="⚡️ Pay"
           description={
             <>
-              Every rental is mapped to its What3Words address through an <strong>$RNTBNB coin</strong>.
-              This coin functions as a digital escrow—allowing renters to pay hosts directly and gain
-              fractional real estate ownership of the property. It’s a transparent, community-driven way
-              to build equity from every verified stay on the{" "}
-              <a href="https://hahz.live" target="_blank" rel="noopener noreferrer">
-                HAHZ.LIVE
-              </a>{" "}
-              network.
+              Hosts are paid with a <a href="https://phantom.com" target="_blank" rel="noopener noreferrer">Phantom</a> wallet USDC airdrop instantly once a ReelView is verified. 
             </>
           }
         />
