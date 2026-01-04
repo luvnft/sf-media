@@ -1,3 +1,5 @@
+/* Navigation.module.css */
+
 .nav {
   position: fixed;
   top: 0;
@@ -30,12 +32,14 @@
   height: auto;
 }
 
+/* Modern toggle button - Updated from circle to modern pill shape */
 .toggle {
-  min-width: 85px;
-  width: 85px;
-  height: 85px;
-  background-color: var(--font-color);
-  border-radius: 50%;
+  min-width: 100px;
+  width: auto;
+  height: 52px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50px;
+  padding: 12px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -52,6 +56,14 @@
   position: relative;
   top: 0;
   z-index: 9999;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 30px rgba(102, 126, 234, 0.3);
+  border: none;
+}
+
+.toggle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4);
 }
 
 .toggle::before {
@@ -59,11 +71,11 @@
   position: absolute;
   width: 0;
   height: 0;
-  background-color: var(--main-color);
-  border-radius: 50%;
-  -webkit-transition: width 0.2s ease-in, height 0.2s ease-in;
-  -o-transition: width 0.2s ease-in, height 0.2s ease-in;
-  transition: width 0.2s ease-in, height 0.2s ease-in;
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  border-radius: 50px;
+  -webkit-transition: width 0.3s ease-in, height 0.3s ease-in;
+  -o-transition: width 0.3s ease-in, height 0.3s ease-in;
+  transition: width 0.3s ease-in, height 0.3s ease-in;
   z-index: -1;
 }
 
@@ -74,83 +86,97 @@
 
 .text {
   font-family: var(--font-poppins);
-  color: var(--primary-bg);
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  -webkit-flex-direction: column;
-  flex-direction: column;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
-  font-size: 1.8rem;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  gap: 4px;
 }
 
-.toggle:hover span {
-  color: white;
-}
-
-.text span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  -webkit-flex-direction: column;
-  flex-direction: column;
+.textSpan {
+  background: linear-gradient(45deg, #fff, #e0e0e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
   margin: 0;
   padding: 0;
   line-height: 100%;
   font-weight: 500;
 }
 
+.dot {
+  color: #ffd700;
+  margin-left: 2px;
+}
+
+.cursorX svg {
+  color: white;
+  transition: transform 0.3s ease;
+  width: 24px;
+  height: 24px;
+}
+
+.cursorX:hover svg {
+  transform: rotate(90deg);
+}
+
+/* Modern menu - Updated from full-screen to glass morphism dropdown */
 .menu {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100vw;
-  height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  max-height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
-  background-color: var(--primary-bg);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 9998;
 }
 
-.menu ul {
+.menuList {
   list-style: none;
   padding: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
 }
 
-.menu ul li:first-child {
-  border-top: 1px solid #272b3d;
-}
-
-.menu ul li {
-  padding: 0.5vw 95px 0.6vw;
-  border-bottom: 1px solid #272b3d;
+.menuListItem {
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,55 +186,122 @@
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  border: none;
+  padding: 0;
+  transition: all 0.3s ease;
 }
 
-.menu ul li a {
+.menuListItem:first-child {
+  border-top: none;
+}
+
+.menuListItem:last-child {
+  border-bottom: none;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 24px;
+  background: white;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
   position: relative;
   overflow: hidden;
-  display: block;
-  width: 100%;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: inherit;
+  text-align: left;
+  min-height: 80px;
 }
 
-.menu ul li a span,
-.menu ul li a .hoverText {
-  display: block;
+.menuItemContent {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 2;
   position: relative;
-  font-size: clamp(3rem, 10vw, 10rem);
-  text-transform: uppercase;
+}
+
+.emoji {
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.menuItem:hover .emoji {
+  transform: scale(1.2);
+}
+
+.menuText {
+  font-size: 18px;
   font-weight: 600;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  -o-transition: transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+  color: #1a1a1a;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
 }
 
-.menu ul li a span {
-  color: var(--font-color);
+.menuItem:hover .menuText {
+  color: var(--hover-color);
 }
 
-.menu ul li a .hoverText {
+.menuItemHover {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, var(--hover-color)20, transparent);
+  transition: left 0.6s ease;
+  z-index: 1;
+}
+
+.menuItem:hover .menuItemHover {
+  left: 100%;
+}
+
+.arrow {
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+  color: var(--hover-color);
+  display: flex;
+  align-items: center;
+}
+
+.menuItem:hover .arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Subtle border animation */
+.menuItem::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  text-align: center;
-  color: var(--main-color);
-  -webkit-transform: translateY(100%);
-  -ms-transform: translateY(100%);
-  transform: translateY(100%);
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+  padding: 2px;
+  background: linear-gradient(45deg, var(--hover-color), transparent);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.menu ul li a:hover span {
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  transform: translateY(-100%);
+.menuItem:hover::before {
+  opacity: 1;
 }
 
-.menu ul li a:hover .hoverText {
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
+/* Remove old hover text styles */
+.hoverText {
+  display: none;
 }
 
 @media screen and (max-width: 980px) {
@@ -217,14 +310,18 @@
   }
 
   .toggle {
-    min-width: 70px;
-    width: 70px;
-    height: 70px;
+    min-width: 90px;
+    height: 48px;
+    padding: 10px 20px;
   }
 
   .logo {
     width: 142px;
     height: auto;
+  }
+
+  .text {
+    font-size: 14px;
   }
 }
 
@@ -236,10 +333,50 @@
 
   .toggle {
     z-index: 999;
+    min-width: 80px;
+    height: 44px;
   }
 
-  .menu ul li a span,
-  .menu ul li a .hoverText {
-    line-height: 220%;
+  .menu {
+    width: 95%;
+    max-width: 400px;
+    padding: 16px;
+  }
+
+  .menuList {
+    gap: 12px;
+  }
+
+  .menuItem {
+    padding: 16px 20px;
+    min-height: 70px;
+  }
+
+  .menuText {
+    font-size: 16px;
+  }
+  
+  .emoji {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .toggle {
+    min-width: 70px;
+    height: 40px;
+    padding: 8px 16px;
+  }
+  
+  .text {
+    font-size: 13px;
+  }
+  
+  .menuItemContent {
+    gap: 12px;
+  }
+  
+  .menuText {
+    font-size: 14px;
   }
 }
