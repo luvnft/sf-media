@@ -44,16 +44,9 @@ const Home = () => {
           🏠 <strong>RNTBNB TIKTOK RENTALS</strong>
         </h1>
         <p className={styles.description}>
-            Hosts earn more and renters pay no middleman fees. 🎦 Your RNTal is confirmed by a TikTok Reel — funds release after your TikTok ReelView is posted. Follow and DM <a href="https://www.tiktok.com/@rntbnb" target="_blank" rel="noopener noreferrer">
+            Hosts earn more and renters pay no middleman fees. 🎦 Your RNTal is confirmed by a TikTok Reel. Follow and DM <a href="https://www.tiktok.com/@rntbnb" target="_blank" rel="noopener noreferrer">
             @RNTBNB
-          </a> to RNT. Download the 📍{" "}
-          <a href="https://what3words.com" target="_blank" rel="noopener noreferrer">
-            What3Words app
-          </a> 👻 {" "}
-          <a href="https://phantom.app" target="_blank" rel="noopener noreferrer">
-            Phantom Wallet app
-          </a>.<br />
-          {" "}
+          </a> to RNT.  
         </p>
       </div>
 
