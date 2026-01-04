@@ -103,7 +103,7 @@ const WhyUs = () => {
         </div>
 
         <div className={styles.advantagesList} ref={advantagesListRef}>
-          <h4>How to Earn Bitcoin $RNT</h4>
+          <h4>How to leave a ReelView</h4>
 
           {/* STEP 1 */}
           <div className={styles.advantageItem}>
