@@ -109,14 +109,14 @@ const Solutions = () => {
 
       <div className={styles.solutionsIntro}>
         <p className={styles.decoWord} ref={decoWordRef}>
-          SUB
+          100%
         </p>
         <h2>
-          1️⃣ SUBSCRIBE TO{" "}
+          💯 TRANSPARENT {" "}
           <span className="color" ref={colorSpanRef}>
-            HAHZ.LIVE{" "}
+            TIKTOK{" "}
           </span>
-          <br /> TO START
+          <br /> RNTALS
         </h2>
 
         <div className="spacer"></div>
