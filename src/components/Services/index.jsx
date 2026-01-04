@@ -90,37 +90,23 @@ function Services() {
           </p>
           <h2>
             <span className="color" ref={colorSpanRef}>
-              Tokenized Real Estate
+              TRUST
             </span>
-            <br /> The Future of Trust in Rentals
+            <br /> RNTBNB
           </h2>
 
           <div className="spacer"></div>
 
           <p>
-            RNTBNB transforms how the world rents, buys, and stays — by verifying every host,
-            renter, and property through{" "}
-            <strong>Phantom Wallet</strong> instead of paperwork, email threads, or leases.
+            RNTBNB transforms how the world rents by removing outdated middlemen fees, paperwork
+            and email threads. RNTBNB charges hosts 10% and rewards RNTers with a 10% discount
+            on their future RNTal by leaving a TikTok ReelView.
             <br />
             <br />
-            Each rental is <strong>tokenized and mapped</strong> to its unique{" "}
-            <a href="https://what3words.com" target="_blank" rel="noopener noreferrer">
-              What3Words
-            </a>{" "}
-            address, solving modern housing issues such as:
-            <br />
-            <br />
-            🧠 <strong>AI Deepfake Prevention:</strong> Every rental and renter is verified on-chain
-            through a real wallet signature, not a fake ID or photo.
-            <br />
-            🚫 <strong>Anti-Fraud & Anti-Squatting:</strong> Tokens confirm true ownership and
-            occupancy — no fake listings or hijacked leases.
-            <br />
-            💎 <strong>No Paperwork:</strong> Payments, contracts, and receipts are stored directly
-            in both host and renter wallets.
-            <br />
-            🌍 <strong>Housing Crisis Solution:</strong> Fractionalized ownership lets anyone invest
-            in real properties, creating community-based housing opportunities.
+            ✅ Zero fake reviews
+            ✅ Zero chargeback abuse
+            ✅ RNTers create real UGC for every RNTal
+            ✅ 100% transparent + verified RNTals
           </p>
         </div>
 
