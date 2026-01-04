@@ -161,7 +161,7 @@ const Solutions = () => {
               <a href="https://what3words.com" target="_blank" rel="noopener noreferrer">
                 What3Words
               </a>{" "}
-              3 word address ///keep.it.simple that also acts as the RNTal TikTok social media hashtag #KeepItSimple.
+              3 word address ///keep.it.simple for easy navigation and accurate location sharing.
             </>
           }
         />
@@ -170,8 +170,8 @@ const Solutions = () => {
           title="🎙️ ReelView"
           description={
             <>
-              Each RNTal has a TikTok AR Effect ReelView pinned to the What3Words address so future RNTers can watch
-              all of the past RNTers reviews in the form of a Reel. See an example of a <a href="https://www.tiktok.com/effect/Progress-Residential-2834938852?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer">ReelView here.</a> 
+              The name of the ReelView is the name of the What3Words address (e.g., ///keep.it.simple) and the same as the TikTok hashtag
+              #KeepItSimple. See an example of a <a href="https://www.tiktok.com/effect/Progress-Residential-2834938852?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer">ReelView here.</a> 
             </>
           }
         />
