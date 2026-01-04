@@ -96,9 +96,6 @@ const WhyUs = () => {
           <p className={styles.descriptionIntro}>
             🎙️ We solved the biggest problem with traditional rental apps not keeping it real when it comes to their rental reviews
             with a new social transparent TikTok AR effect review called ReelView. 
-            <br /><br />
-            Each ReelView Mic is pinned to a What3Words address (for example 📍///keep.it.simple) — that exact 3-word location is the
-            name of the ReelView and the TikTok hashtag for the RNTal is #…
           </p>
         </div>
 
@@ -130,7 +127,7 @@ const WhyUs = () => {
             </div>
             <p>
               2️⃣ Record a short ReelView showing the conditions of your RNTal and vibes. 
-              AR mic. Tag both your host and{" "}
+              Tag both your host and{" "}
               <a
                 href="https://www.tiktok.com/@rntbnb"
                 target="_blank"
@@ -150,17 +147,6 @@ const WhyUs = () => {
             <p>
               3️⃣ Once your post is live, your host and RNTBNB team verify your ReelView video
               to confirm the location and timestamp.
-            </p>
-          </div>
-
-          {/* STEP 4 - Added missing step */}
-          <div className={styles.advantageItem}>
-            <div className={styles.advantageIcon}>
-              <img src={tick} alt="tick icon" />
-            </div>
-            <p>
-              4️⃣ After verification, you'll receive Bitcoin $RNT tokens directly to your 
-              Phantom wallet as a reward for your honest review!
             </p>
           </div>
         </div>
