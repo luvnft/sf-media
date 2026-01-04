@@ -124,18 +124,16 @@ const Solutions = () => {
         <p ref={descriptionIntroRef}>
           <strong>RNTer</strong>
           <br />
-          • DM <a href="https://tiktok.com/@rntbnb" target="_blank" rel="noopener noreferrer">@RNTBNB</a> on TikTok to receive your Stripe payment link.
-          • Your payment is held until your ReelView is verified.
-          • When you arrive, DM a short video showing the rental + your What3Words location.
-          • When you leave post your ReelView and tag your Host + @RNTBNB to confirm your stay and release payment to the host.
+          1️⃣ DM <a href="https://tiktok.com/@rntbnb" target="_blank" rel="noopener noreferrer">@RNTBNB</a> on TikTok to receive your Stripe payment link. 
+          2️⃣ When you arrive, DM a short video showing the rental + your What3Words location.
+          3️⃣ When you leave post your ReelView and tag your Host + @RNTBNB to confirm your stay and release payment to the host.
           <br />
           <br />
           <strong>HOST</strong>
           <br />
-          • We create a TikTok AR Effect + ReelView experience pinned to your <a href="https://what3words.com" target="_blank" rel="noopener noreferrer">What3Words</a> RNTal location.
-          • We produce short rental promo reels for your listing.
-          • We run TikTok paid ad campaigns to drive bookings.
-          • RNTers post a ReelView as proof-of-stay before payment is released.
+          1️⃣ We create a TikTok AR Effect ReelView pinned to your <a href="https://what3words.com" target="_blank" rel="noopener noreferrer">What3Words</a> RNTal location.
+          2️⃣ We create a short rental promo reel for your RNTal.
+          3️⃣ RNTers post a ReelView as proof-of-stay before payment is released.
           <br />
           <br />
         </p>
@@ -173,7 +171,7 @@ const Solutions = () => {
           description={
             <>
               Each RNTal has a TikTok AR Effect ReelView pinned to the What3Words address so future RNTers can watch
-              all of the past RNTers reviews in the form of a Reel.
+              all of the past RNTers reviews in the form of a Reel. See an example of a <a href="https://www.tiktok.com/effect/Progress-Residential-2834938852?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer">ReelView here.</a> 
             </>
           }
         />
