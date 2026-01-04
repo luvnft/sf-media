@@ -41,20 +41,17 @@ const Home = () => {
     <div ref={homeRef} className={styles.home} id="startseite">
       <div className={styles.intro}>
         <h1 className={styles.title}>
-          🏠 <strong>RNTBNB TikTok Rentals</strong>
+          🏠 <strong>RNTBNB TIKTOK RENTALS</strong>
         </h1>
         <p className={styles.description}>
-          🪙 Earn <strong>Bitcoin $RNT</strong> every time you rent. 🎦 Your <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a> video becomes your proof of stay. Follow <a href="https://www.tiktok.com/@rntbnb" target="_blank" rel="noopener noreferrer">
+            Hosts earn more and renters pay no middleman fees. 🎦 Your RNTal is confirmed by a TikTok Reel — funds release after your TikTok ReelView is posted. Follow and DM <a href="https://www.tiktok.com/@rntbnb" target="_blank" rel="noopener noreferrer">
             @RNTBNB
-          </a> 📍 All you need: the{" "}
+          </a> to RNT. Download the 📍{" "}
           <a href="https://what3words.com" target="_blank" rel="noopener noreferrer">
             What3Words app
-          </a>,{" "}
+          </a> 👻 {" "}
           <a href="https://phantom.app" target="_blank" rel="noopener noreferrer">
-            Phantom Wallet
-          </a>, and a{" "}
-          <a href="https://hahz.live" target="_blank" rel="noopener noreferrer">
-            HAHZ.LIVE subscription
+            Phantom Wallet app
           </a>.<br />
           {" "}
         </p>
