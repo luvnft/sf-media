@@ -87,25 +87,14 @@
 .text {
   font-family: var(--font-poppins);
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  flex-direction: row; /* Change from column to row */
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 1px;
-  gap: 4px;
+  gap: 0; /* Remove gap between spans */
 }
 
 .textSpan {
@@ -113,7 +102,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  display: block;
+  display: inline-block; /* Change from block to inline-block */
   margin: 0;
   padding: 0;
   line-height: 100%;
