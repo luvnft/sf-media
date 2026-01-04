@@ -85,33 +85,21 @@ const WhyUs = () => {
             REELVIEW
           </p>
           <h2>
-           🎙️ Every RNTal Comes With a TikTok AR{" "}
+           🎙️EVERY RNTAL HAS A {" "}
           <span className="color" ref={colorSpanRef}>
-              ReelView
+              REELVIEW
           </span>{" "}
-              Mic Mapped to Its What3Words Address
+              
           </h2>
 
           <div className="spacer"></div>
 
           <p className={styles.descriptionIntro}>
-            🎙️ The <strong>ReelView Mic</strong> is a special TikTok AR Effect given to every rental
-            on <strong>RNTBNB</strong>. It’s like a digital microphone that appears on TikTok once
-            your stay is verified.
-            <br />
-            <br />
-            🎙️ Each ReelView Mic is <strong>tethered to a What3Words address</strong> (for example,
-            <em> ///keep.it.simple</em>) — that exact 3-word location is where your AR filter lives
-            on TikTok.
-            <br />
-            <br />
-            🎙️ The What3Words hashtag used for your ReelView is called a{" "}
-            <strong>HAHZtag</strong>. It matches your location and helps connect your video to your
-            verified stay — turning every rental review into proof of presence.
-            <br />
-            <br />
-            💡 In short: each rental = one AR effect, one W3W address, and one way to earn Bitcoin
-            rewards for sharing honest, verifiable experiences.
+            🎙️ We solved the biggest problem with traditional rental apps not keeping it real when it comes to their rental reviews
+            with a new social transparent TikTok AR effect review called ReelView. 
+            <br></br>
+            Each ReelView Mic is pinned to a What3Words address (for example 📍///keep.it.simple) — that exact 3-word location is the
+            name of the ReelView and the TikTok hashtag for the RNTal is #… 
           </p>
         </div>
 
@@ -132,8 +120,7 @@ const WhyUs = () => {
               >
                 @RNTBNB
               </a>{" "}
-              bio link, then tap the magic 🪄 wand icon to find your rental’s What3Words address and its
-              matching ReelView Mic.
+              bio link, then tap the magic 🪄 wand icon to find your RNTal What3Words address ReelView Mic.
             </p>
           </div>
 
@@ -143,7 +130,7 @@ const WhyUs = () => {
               <img src={tick} alt="tick icon" />
             </div>
             <p>
-              2️⃣ Record a short <strong>ReelView</strong> (up to 11 seconds) using your rental’s
+              2️⃣ Record a short ReelView showing the conditions of your RNTal and vibes. 
               AR mic. Tag both your host and{" "}
               <a
                 href="https://www.tiktok.com/@rntbnb"
@@ -162,21 +149,10 @@ const WhyUs = () => {
               <img src={tick} alt="tick icon" />
             </div>
             <p>
-              3️⃣ Once your post is live, your host and RNTBNB team verify your ReelView video to
-              confirm the location and timestamp. Verified posts automatically qualify for{" "}
-              <strong>Bitcoin $RNT rewards</strong>.
+              3️⃣ Once your post is live, your host and RNTBNB team verify your ReelView video
+              to confirm the location and timestamp.
             </p>
           </div>
-
-          {/* STEP 4 */}
-          <div className={styles.advantageItem}>
-            <div className={styles.advantageIcon}>
-              <img src={tick} alt="tick icon" />
-            </div>
-            <p>
-              4️⃣ If you loved the experience, you can invest in that property’s{" "}
-              <strong>RNTBNB Coin</strong> — a digital share mapped to the same What3Words address.
-              Share your ReelView again to boost its visibility and grow your ownership over time.
             </p>
           </div>
         </div>
