@@ -6,6 +6,7 @@ import { gsap } from "gsap";
 
 function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
   const menuRef = useRef(null);
   const toggleRef = useRef(null);
   const textRef = useRef(null);
@@ -16,29 +17,22 @@ function Navigation() {
 
   const menuItems = [
     {
-      name: "SUB 👉 HAHZ.LIVE",
-      href: "https://hahz.live",
-      emoji: "👉"
+      name: "FOLLOW 📲@RNTBNB",
+      href: "https://tiktok.com/@rntbnb",
+      emoji: "📲",
+      color: "#FF0050" // TikTok pink
     },
     {
       name: "DL 📍WHAT3WORDS",
       href: "https://what3words.com",
-      emoji: "📍"
+      emoji: "📍",
+      color: "#FF6B35" // Orange
     },
     {
       name: "DL 👻 PHANTOM",
       href: "https://phantom.com",
-      emoji: "👻"
-    },
-    {
-      name: "FOLLOW 👻@HAHZLIVE",
-      href: "https://phantom.com/user/hahzlive",
-      emoji: "👻"
-    },
-    {
-      name: "FOLLOW 📲@RNTBNB",
-      href: "https://tiktok.com/@rntbnb",
-      emoji: "📲"
+      emoji: "👻",
+      color: "#AB68FF" // Phantom purple
     }
   ];
 
@@ -128,39 +122,68 @@ function Navigation() {
           <div className={styles.cursorX}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="28"
+              height="28"
               viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
-              <path d="M13.414 12l4.293-4.293a1 1 0 10-1.414-1.414L12 10.586 7.707 6.293a1 1 0 10-1.414 1.414L10.586 12l-4.293 4.293a1 1 0 101.414 1.414L12 13.414l4.293 4.293a1 1 0 001.414-1.414L13.414 12z" />
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
             </svg>
           </div>
         ) : (
           <p className={styles.text} ref={textRef}>
-            <span>ME</span>
-            <span>NU</span>
+            <span className={styles.textSpan}>ME</span>
+            <span className={styles.textSpan}>NU</span>
+            <span className={styles.dot}>•</span>
           </p>
         )}
       </div>
       {isOpen && (
-        <div
-          className={styles.menu}
-          ref={menuRef}
-        >
-          <ul>
+        <div className={styles.menu} ref={menuRef}>
+          <ul className={styles.menuList}>
             {menuItems.map((item, index) => (
-              <li key={index}>
+              <li 
+                key={index} 
+                className={styles.menuListItem}
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
+              >
                 <button
                   className={styles.menuItem}
                   onClick={() => handleExternalLink(item.href)}
                   aria-label={item.name}
+                  style={{
+                    '--hover-color': item.color,
+                    transform: hoveredIndex === index ? 'translateY(-2px)' : 'none',
+                    boxShadow: hoveredIndex === index 
+                      ? `0 10px 30px -10px ${item.color}40` 
+                      : '0 4px 20px -4px rgba(0,0,0,0.1)'
+                  }}
                 >
-                  <span className={styles.menuText}>
-                    {item.name}
-                  </span>
-                  <span className={styles.hoverText}>
-                    {item.name}
-                  </span>
+                  <div className={styles.menuItemContent}>
+                    <span className={styles.emoji}>{item.emoji}</span>
+                    <span className={styles.menuText}>
+                      {item.name}
+                    </span>
+                  </div>
+                  <div className={styles.menuItemHover} />
+                  <div className={styles.arrow}>
+                    <svg 
+                      width="20" 
+                      height="20" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      strokeWidth="2"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </div>
                 </button>
               </li>
             ))}
