@@ -64,7 +64,7 @@ function Footer() {
         {/* Brand Section */}
         <div className={styles.brandSection}>
           <p className={styles.copyright}>
-            ©2025 RNTBNB all rights reserved
+            ©2026 RNTBNB all rights reserved
           </p>
           <p className={styles.credits}>
             <a 
